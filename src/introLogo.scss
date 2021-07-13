@@ -1,0 +1,114 @@
+$delay: 0.5s;
+$aniTime: 1.5s;
+
+#introLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: none;
+    animation: fillLogo 2s ease forwards (4.8 * $delay);
+
+    path {
+        stroke: black;
+        stroke-width: 3px;
+    }
+    circle {
+        fill:transparent;
+        stroke:black;
+        stroke-width: 0px;
+    }
+}
+
+#introLogo path:nth-child(1) {
+    stroke-dasharray: 128.5460205078125;
+    stroke-dashoffset: 128.5460205078125;
+    animation: strokeAnimation $aniTime ease forwards;
+}
+#introLogo path:nth-child(2) {
+    stroke-dasharray: 147.3062744140625;
+    stroke-dashoffset: 147.3062744140625;
+    animation: strokeAnimation $aniTime ease forwards;
+}
+#introLogo path:nth-child(3) {
+    stroke-dasharray: 205.04403686523438;
+    stroke-dashoffset: 205.04403686523438;
+    animation: strokeAnimation $aniTime ease forwards $delay;
+}
+#introLogo path:nth-child(4) {
+    stroke-dasharray: 83.5780029296875;
+    stroke-dashoffset: 83.5780029296875;
+    animation: strokeAnimation $aniTime ease forwards $delay;
+}
+#introLogo path:nth-child(5) {
+    stroke-dasharray: 121.6500244140625;
+    stroke-dashoffset: 121.6500244140625;
+    animation: strokeAnimation $aniTime ease forwards $delay;
+}
+#introLogo path:nth-child(6) {
+    stroke-dasharray: 241.91812133789062;
+    stroke-dashoffset: 241.91812133789062;
+    animation: strokeAnimation $aniTime ease forwards (2 * $delay);
+}
+#introLogo path:nth-child(7) {
+    stroke-dasharray: 224.4420928955078;
+    stroke-dashoffset: 224.4420928955078;
+    animation: strokeAnimation $aniTime ease forwards (2 * $delay);
+}
+#introCircle2 {
+    width: 10%;
+    animation: circleStrokeAnimation 2.5s ease forwards (5.7*$delay);
+}
+#logoWrapper{
+    animation: hideLogo 1s ease forwards (10.4 * $delay);
+}
+
+@keyframes strokeAnimation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fillLogo {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #000000;
+    }
+}
+@keyframes displayCircle {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+@keyframes circleStrokeAnimation{
+    0%{
+        stroke-width: 0px;
+    }
+    89%{
+        stroke-width: 18px;
+    }
+    90%{
+        fill:transparent;
+    }
+    100%{
+        fill:#000000;
+    }
+    //67%{
+    //    fill
+   // }
+    //100%{
+    //    fill: transparent;
+    //}
+}
+@keyframes hideLogo{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
