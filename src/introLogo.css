@@ -1,3 +1,9 @@
+#contentWrapper {
+  opacity: 0;
+  -webkit-animation: displayContent 2s ease forwards 5s;
+          animation: displayContent 2s ease forwards 5s;
+}
+
 #introLogo {
   position: absolute;
   top: 50%;
@@ -71,13 +77,13 @@
 
 #introCircle2 {
   width: 10%;
-  -webkit-animation: circleStrokeAnimation 2.5s ease forwards 2.85s;
-          animation: circleStrokeAnimation 2.5s ease forwards 2.85s;
+  -webkit-animation: circleStrokeAnimation 2.5s ease forwards 2.3s;
+          animation: circleStrokeAnimation 2.5s ease forwards 2.3s;
 }
 
 #logoWrapper {
-  -webkit-animation: hideLogo 1s ease forwards 5.2s;
-          animation: hideLogo 1s ease forwards 5.2s;
+  -webkit-animation: hideLogo 1s ease forwards 4.5s;
+          animation: hideLogo 1s ease forwards 4.5s;
 }
 
 @-webkit-keyframes strokeAnimation {
@@ -159,20 +165,42 @@
 }
 
 @-webkit-keyframes hideLogo {
-  0% {
+  from {
     opacity: 100%;
+    display: block;
   }
-  100% {
+  to {
     opacity: 0%;
+    display: none;
   }
 }
 
 @keyframes hideLogo {
-  0% {
+  from {
+    opacity: 100%;
+    display: block;
+  }
+  to {
+    opacity: 0%;
+    display: none;
+  }
+}
+
+@-webkit-keyframes displayContent {
+  from {
+    opacity: 0%;
+  }
+  to {
     opacity: 100%;
   }
-  100% {
+}
+
+@keyframes displayContent {
+  from {
     opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
 /*# sourceMappingURL=introLogo.css.map */

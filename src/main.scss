@@ -7,3 +7,20 @@ body{
 
     background-color: #dadada;
 }
+#contentWrapper{
+    margin:0;
+    padding:0;
+
+    height:100%;
+    width:100%;
+
+    #burgerMenu{
+        width: 1vw;
+        height: 1vw;
+        position: absolute;
+        .line{
+            border-bottom: 2px solid black;
+            position: absolute;
+        }
+    }
+}
