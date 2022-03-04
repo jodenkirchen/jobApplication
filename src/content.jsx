@@ -3,7 +3,7 @@ function Content() {
     const [burgerActive, setBurgerActive] = useState(false);
     
   function  burgerSwap() {
-        document.body.classList.toggle = 'burgerActive';
+        document.body.classList.toggle("burgerActive");
       }
 
     return (
@@ -18,6 +18,12 @@ function Content() {
                 <li className="navItem"><span>About</span></li>
                 <li className="navItem"><span>Shop</span></li>
             </nav>
+            <div id="intro">
+                <div id="welcome" class="introItem">
+                    Hi&#33; I&#039;m  Jan  <br />
+                    Developer&#x2f;Webdeveloper
+                </div>    
+            </div>
         </div>
     )
 }

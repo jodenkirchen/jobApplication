@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   background-color: #dadada;
+  font-family: "Fredoka", sans-serif;
+}
+
+body.burgerActive {
+  overflow: hidden;
 }
 
 #contentWrapper {
@@ -35,8 +41,8 @@ body {
 }
 
 #contentWrapper #burgerMenu #firstLine.active {
-  -webkit-transform: rotate(45deg) translate(10px, 9px);
-          transform: rotate(45deg) translate(10px, 9px);
+  -webkit-transform: rotate(45deg) translate(3vw, 2.5vw);
+          transform: rotate(45deg) translate(3vw, 2.5vw);
 }
 
 #contentWrapper #burgerMenu #secondLine {
@@ -59,8 +65,8 @@ body {
 }
 
 #contentWrapper #burgerMenu #thirdLine.active {
-  -webkit-transform: rotate(-45deg) translate(3px, -12px);
-          transform: rotate(-45deg) translate(3px, -12px);
+  -webkit-transform: rotate(-45deg) translate(1vw, -3.5vw);
+          transform: rotate(-45deg) translate(1vw, -3.5vw);
 }
 
 #contentWrapper nav {
@@ -73,7 +79,8 @@ body {
 }
 
 #contentWrapper nav .navItem {
-  padding-bottom: 2vh;
+  padding-top: 9vh;
+  font-size: 4vh;
   list-style: none;
   text-align: center;
   opacity: 0;
@@ -90,5 +97,20 @@ body {
   opacity: 100%;
   -webkit-transition: opacity 0.5s ease-in;
   transition: opacity 0.5s ease-in;
+}
+
+#intro {
+  text-align: center;
+}
+
+#intro .introItem {
+  background-color: #f0f0f0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 4px gray, 2px 3px 15px gray, 0px 3px 15px gray;
+          box-shadow: 0px 2px 4px gray, 2px 3px 15px gray, 0px 3px 15px gray;
 }
 /*# sourceMappingURL=main.css.map */
