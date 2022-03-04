@@ -28,23 +28,23 @@ body {
 }
 
 #contentWrapper #burgerMenu #firstLine {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 #contentWrapper #burgerMenu #firstLine.active {
   -webkit-transform: rotate(45deg) translate(10px, 9px);
-  transform: rotate(45deg) translate(10px, 9px);
+          transform: rotate(45deg) translate(10px, 9px);
 }
 
 #contentWrapper #burgerMenu #secondLine {
   opacity: 100%;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 #contentWrapper #burgerMenu #secondLine.active {
@@ -52,14 +52,43 @@ body {
 }
 
 #contentWrapper #burgerMenu #thirdLine {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 #contentWrapper #burgerMenu #thirdLine.active {
-  -webkit-transform: rotate(-45deg) translate(2px, -9px);
-          transform: rotate(-45deg) translate(2px, -9px);
+  -webkit-transform: rotate(-45deg) translate(3px, -12px);
+          transform: rotate(-45deg) translate(3px, -12px);
+}
+
+#contentWrapper nav {
+  width: 100vw;
+  padding-top: 10vh;
+  background-color: #969696;
+  pointer-events: none;
+  opacity: 0;
+  height: 0;
+}
+
+#contentWrapper nav .navItem {
+  padding-bottom: 2vh;
+  list-style: none;
+  text-align: center;
+  opacity: 0;
+}
+
+#contentWrapper nav.active {
+  height: 100vh;
+  opacity: 100%;
+  -webkit-transition: height 0.5s ease-in;
+  transition: height 0.5s ease-in;
+}
+
+#contentWrapper nav.active .navItem {
+  opacity: 100%;
+  -webkit-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 /*# sourceMappingURL=main.css.map */
