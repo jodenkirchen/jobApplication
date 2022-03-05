@@ -19,10 +19,18 @@ function Content() {
                 <li className="navItem"><span>Shop</span></li>
             </nav>
             <div id="intro">
-                <div id="welcome" class="introItem">
-                    Hi&#33; I&#039;m  Jan  <br />
-                    Developer&#x2f;Webdeveloper
+                <div id="welcome" className="introItem">
+                <img id="me" src="/media/me.jpg"></img>
+                    <div id="welcomeText">
+                        Jan Odenkirchen<br />
+                        <div id="welcomeTextJob">
+                            Webdeveloper<br />
+                            Developer</div>
+                        </div>      
                 </div>    
+                <div id="timeline" className="introItem">
+                    <div id="2014" class="timelineItem"></div>
+                </div>
             </div>
         </div>
     )

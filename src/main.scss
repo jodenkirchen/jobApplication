@@ -6,7 +6,7 @@ body {
     height: 100%;
     width: 100%;
 
-    background-color: #dadada;
+    background-color: #3aafa9;
     font-family: "Fredoka", sans-serif;
 }
 
@@ -41,8 +41,8 @@ body.burgerActive {
             transition: transform $transitionDelay;
         }
         #firstLine.active {
-            transform: rotate(45deg) translate(3vw, 2.5vw);
-        }
+            transform: rotate(45deg) translate(11px, 5px);
+        } 
         #secondLine {
             opacity: 100%;
             transition: transform $transitionDelay;
@@ -54,7 +54,7 @@ body.burgerActive {
             transition: transform $transitionDelay;
         }
         #thirdLine.active {
-            transform: rotate(-45deg) translate(1vw, -3.5vw);
+            transform: rotate(-45deg) translate(6px, -11px);
         }
     }
 
@@ -90,15 +90,36 @@ body.burgerActive {
 }
 
 #intro {
-    text-align: center;
+    margin-top: 35px;
 
     .introItem {
-        background-color: #f0f0f0;
+        //background-color: #f0f0f0;
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 75vw;
         border-radius: 10px;
-        box-shadow: 0px 2px 4px gray, 2px 3px 15px gray, 0px 3px 15px gray;
+        //box-shadow: 0px 2px 4px gray, 2px 3px 15px gray, 10px 3px 15px gray;
     }
+    #welcome{
+        display:inline-flex;
+        #welcomeText{
+            margin: 15px 0 0 -57px;
+            padding: 0;
+            width:50%;
+            text-align: left;
+            padding-left: 10px;
+            font-size: 25px;
+
+            #welcomeTextJob{
+                margin-left:50px;
+                font-size: 14px;
+            }
+        }
+        #me{
+            max-width: 50%;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+
 }
