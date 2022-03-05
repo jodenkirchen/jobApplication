@@ -27,10 +27,8 @@ function Content() {
                             Webdeveloper<br />
                             Developer</div>
                         </div>      
-                </div>    
-                <div id="timeline" className="introItem">
-                    <div id="2014" class="timelineItem"></div>
-                </div>
+                </div>  
+                <div id="arrowIntro"></div>  
             </div>
         </div>
     )
