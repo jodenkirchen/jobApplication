@@ -22,7 +22,9 @@ body.burgerActive {
 #contentWrapper #burgerMenu {
   width: 5vw;
   margin-left: 6px;
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 3;
 }
 
 #contentWrapper #burgerMenu .line {
@@ -71,7 +73,6 @@ body.burgerActive {
 
 #contentWrapper nav {
   width: 100vw;
-  padding-top: 10vh;
   background-color: #969696;
   pointer-events: none;
   opacity: 0;
@@ -89,8 +90,12 @@ body.burgerActive {
 #contentWrapper nav.active {
   height: 100vh;
   opacity: 100%;
+  padding-top: 10vh;
   -webkit-transition: height 0.5s ease-in;
   transition: height 0.5s ease-in;
+  position: absolute;
+  top: 0;
+  z-index: 2;
 }
 
 #contentWrapper nav.active .navItem {
@@ -100,7 +105,7 @@ body.burgerActive {
 }
 
 #intro {
-  margin-top: 16vh;
+  margin-top: 27vh;
 }
 
 #intro .introItem {
@@ -137,7 +142,8 @@ body.burgerActive {
 }
 
 #intro #arrowIntro {
-  margin-top: 66vh;
+  right: 5vh;
+  bottom: 5vh;
   padding: 10px;
   display: inline-block;
   border: solid #1d2f2d;
@@ -145,6 +151,5 @@ body.burgerActive {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
-  right: 5vh;
 }
 /*# sourceMappingURL=main.css.map */

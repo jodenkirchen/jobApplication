@@ -2,9 +2,12 @@ import React, {useState} from 'react';
 function Content() {
     const [burgerActive, setBurgerActive] = useState(false);
     
-  function  burgerSwap() {
+    function  burgerSwap() {
         document.body.classList.toggle("burgerActive");
-      }
+    }
+    function scrollDownArrow(){
+
+    }
 
     return (
         <div id="contentWrapper">
@@ -28,7 +31,7 @@ function Content() {
                             Developer</div>
                         </div>      
                 </div>  
-                <div id="arrowIntro"></div>  
+                <div id="arrowIntro" onClick={scrollDownArrow()}></div>  
             </div>
         </div>
     )
