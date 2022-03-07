@@ -11,7 +11,7 @@ body {
 }
 
 body.burgerActive {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 #contentWrapper {
@@ -33,7 +33,7 @@ body.burgerActive {
         .line {
             width: 100%;
             height: 100%;
-            padding: 0.5vh;
+            padding: 4px;
 
             border-bottom: 2px solid #1d2f2d;
         }
@@ -41,7 +41,7 @@ body.burgerActive {
             transition: transform $transitionDelay;
         }
         #firstLine.active {
-            transform: rotate(45deg) translate(6px, 5px);
+            transform: rotate(45deg) translate(9px, 6px);
         } 
         #secondLine {
             opacity: 100%;
@@ -137,4 +137,8 @@ body.burgerActive {
         position: absolute;
 
     }
+}
+
+#timeline{
+    height: 100vh;
 }

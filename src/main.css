@@ -9,7 +9,7 @@ body {
 }
 
 body.burgerActive {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 #contentWrapper {
@@ -30,7 +30,7 @@ body.burgerActive {
 #contentWrapper #burgerMenu .line {
   width: 100%;
   height: 100%;
-  padding: 0.5vh;
+  padding: 4px;
   border-bottom: 2px solid #1d2f2d;
 }
 
@@ -42,8 +42,8 @@ body.burgerActive {
 }
 
 #contentWrapper #burgerMenu #firstLine.active {
-  -webkit-transform: rotate(45deg) translate(6px, 5px);
-          transform: rotate(45deg) translate(6px, 5px);
+  -webkit-transform: rotate(45deg) translate(9px, 6px);
+          transform: rotate(45deg) translate(9px, 6px);
 }
 
 #contentWrapper #burgerMenu #secondLine {
@@ -151,5 +151,9 @@ body.burgerActive {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
+}
+
+#timeline {
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */

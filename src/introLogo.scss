@@ -1,10 +1,15 @@
 $delay: 0.5s;
 $aniTime: 1.5s;
 
-#contentWrapper{
+.introHidden{
     opacity: 0;
     //display: none;
     animation: displayContent 2s ease forwards 5s;
+}
+
+body{
+    overflow:hidden;
+    animation: bodyOverflow 2s ease forwards 5s;
 }
 
 #introLogo {
@@ -127,5 +132,14 @@ $aniTime: 1.5s;
     }
     to{
         opacity: 100%;
+    }
+}
+
+@keyframes bodyOverflow{
+    from{
+        overflow:hidden;
+    }
+    to{
+        overflow:visible;
     }
 }

@@ -1,16 +1,13 @@
 import React, {useState} from 'react';
 function Content() {
     const [burgerActive, setBurgerActive] = useState(false);
-    
+
     function  burgerSwap() {
         document.body.classList.toggle("burgerActive");
     }
-    function scrollDownArrow(){
-
-    }
 
     return (
-        <div id="contentWrapper">
+        <div id="contentWrapper" className="introHidden">
             <div id="burgerMenu" onClick={() => { burgerSwap(); setBurgerActive(!burgerActive)}}>
                 <div id="firstLine" className={burgerActive? "line active" : "line"}></div>
                 <div id="secondLine" className={burgerActive? "line active" : "line"}></div>
@@ -21,6 +18,7 @@ function Content() {
                 <li className="navItem"><span>About</span></li>
                 <li className="navItem"><span>Shop</span></li>
             </nav>
+            <div id="introWrapper">
             <div id="intro">
                 <div id="welcome" className="introItem">
                 <img id="me" src="/media/me.jpg"></img>
@@ -31,8 +29,11 @@ function Content() {
                             Developer</div>
                         </div>      
                 </div>  
-                <div id="arrowIntro" onClick={scrollDownArrow()}></div>  
+                <div id="arrowIntro"></div>  
             </div>
+            </div>
+
+            <div id="timeline"></div>
         </div>
     )
 }

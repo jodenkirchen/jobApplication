@@ -1,7 +1,13 @@
-#contentWrapper {
+.introHidden {
   opacity: 0;
   -webkit-animation: displayContent 2s ease forwards 5s;
           animation: displayContent 2s ease forwards 5s;
+}
+
+body {
+  overflow: hidden;
+  -webkit-animation: bodyOverflow 2s ease forwards 5s;
+          animation: bodyOverflow 2s ease forwards 5s;
 }
 
 #introLogo {
@@ -201,6 +207,24 @@
   }
   to {
     opacity: 100%;
+  }
+}
+
+@-webkit-keyframes bodyOverflow {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: visible;
+  }
+}
+
+@keyframes bodyOverflow {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: visible;
   }
 }
 /*# sourceMappingURL=introLogo.css.map */
