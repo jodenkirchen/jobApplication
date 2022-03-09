@@ -7,7 +7,7 @@ function Content() {
     }
 
     return (
-        <div id="contentWrapper" className="introHidden">
+        <div id="contentWrapper" className="introHidden section">
             <div id="burgerMenu" onClick={() => { burgerSwap(); setBurgerActive(!burgerActive)}}>
                 <div id="firstLine" className={burgerActive? "line active" : "line"}></div>
                 <div id="secondLine" className={burgerActive? "line active" : "line"}></div>
@@ -32,8 +32,6 @@ function Content() {
                 <div id="arrowIntro"></div>  
             </div>
             </div>
-
-            <div id="timeline"></div>
         </div>
     )
 }
