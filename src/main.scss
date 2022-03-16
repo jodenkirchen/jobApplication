@@ -10,12 +10,12 @@ body {
     font-family: "Fredoka", sans-serif;
 }
 
-#root{
+#root {
     overflow: scroll;
     height: 100vh;
     scroll-snap-type: y mandatory;
 
-    .section{
+    .section {
         scroll-snap-align: start;
     }
 }
@@ -52,7 +52,7 @@ body.burgerActive {
         }
         #firstLine.active {
             transform: rotate(45deg) translate(9px, 6px);
-        } 
+        }
         #secondLine {
             opacity: 100%;
             width: 60%;
@@ -93,7 +93,7 @@ body.burgerActive {
         padding-top: 10vh;
         transition: height 0.5s ease-in;
         position: absolute;
-        top:0;
+        top: 0;
         z-index: 2;
 
         .navItem {
@@ -115,44 +115,83 @@ body.burgerActive {
         border-radius: 10px;
         //box-shadow: 0px 2px 4px gray, 2px 3px 15px gray, 10px 3px 15px gray;
     }
-    #welcome{
-        display:inline-flex;
-        #welcomeText{
+    #welcome {
+        display: inline-flex;
+        #welcomeText {
             margin: 15px 0 0 -57px;
             padding: 0;
-            width:50%;
+            width: 50%;
             text-align: left;
             padding-left: 10px;
             font-size: 25px;
 
-            #welcomeTextJob{
-                margin-left:50px;
+            #welcomeTextJob {
+                margin-left: 50px;
                 font-size: 14px;
             }
         }
-        #me{
+        #me {
             max-width: 50%;
             border-radius: 0 10px 10px 0;
         }
     }
 
-    #arrowIntro{
+    #arrowIntro {
         right: 5vh;
         bottom: 5vh;
         padding: 10px;
-        display:inline-block;
+        display: inline-block;
         border: solid #1d2f2d;
         border-width: 0 2px 2px 0;
         transform: rotate(45deg);
         position: absolute;
-
     }
 }
-#skillsWrapper{
-    height:100vh;
-    width:100%;
+#skillsWrapper {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+
+    #upperWaveContainer {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+
+        svg {
+            fill: #3b8783;
+        }
+    }
+
+    #skillTextContainer {
+        position: relative;
+        z-index: 2;
+        top:17vh;
+
+        ul{
+            margin:0;
+            padding:0;
+
+            li{
+                list-style: none;
+            }
+        }
+
+    }
+
+    #lowerWaveContainer {
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        transform: rotate(180deg);
+
+        svg {
+            fill: #3b8783;
+        }
+    }
 }
 
-h2{
+h2 {
     font-size: 16px;
 }
