@@ -4,7 +4,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #3aafa9;
+  background-color: #78685e;
   font-family: "Fredoka", sans-serif;
 }
 
@@ -41,7 +41,7 @@ body.burgerActive {
   width: 100%;
   height: 100%;
   padding: 4px;
-  border-bottom: 2px solid #1d2f2d;
+  border-bottom: 2px solid #c7ff00;
 }
 
 #menuWrapper #burgerMenu #firstLine {
@@ -83,7 +83,7 @@ body.burgerActive {
 
 nav {
   width: 100vw;
-  background-color: #17cecc;
+  background-color: #665950;
   pointer-events: none;
   opacity: 0;
   height: 0;
@@ -91,6 +91,7 @@ nav {
 
 nav .navItem {
   padding-top: 9vh;
+  color: #c7ff00;
   font-size: 4vh;
   list-style: none;
   text-align: center;
@@ -147,6 +148,7 @@ nav.active .navItem {
   text-align: left;
   padding-left: 10px;
   font-size: 25px;
+  color: #c7ff00;
 }
 
 #intro #welcome #welcomeText #welcomeTextJob {
@@ -164,7 +166,7 @@ nav.active .navItem {
   bottom: 5vh;
   padding: 10px;
   display: inline-block;
-  border: solid #1d2f2d;
+  border: solid #c7ff00;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -185,13 +187,14 @@ nav.active .navItem {
 }
 
 #skillsWrapper #upperWaveContainer svg {
-  fill: #3b8783;
+  fill: #615752;
 }
 
 #skillsWrapper #skillTextContainer {
   position: relative;
   z-index: 2;
-  top: 17vh;
+  top: 20vh;
+  color: #c7ff00;
 }
 
 #skillsWrapper #skillTextContainer ul {
@@ -203,6 +206,11 @@ nav.active .navItem {
   list-style: none;
 }
 
+#skillsWrapper #skillTextContainer .skillText {
+  color: #dacdc6;
+  padding-bottom: 30px;
+}
+
 #skillsWrapper #lowerWaveContainer {
   width: 100%;
   bottom: 0;
@@ -212,7 +220,7 @@ nav.active .navItem {
 }
 
 #skillsWrapper #lowerWaveContainer svg {
-  fill: #3b8783;
+  fill: #615752;
 }
 
 h2 {

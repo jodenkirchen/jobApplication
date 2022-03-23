@@ -40,12 +40,15 @@ function Skills() {
                 </div>
                 <div id="languages">
                     <h2>Languages</h2>
-                    <ul>
-                        <li>German&nbsp;&minus;&nbsp;native&nbsp;speaker</li>
-                        <li>English&nbsp;&minus;&nbsp;near&nbsp;native&nbsp;level</li>
-                        <li>Dutch&nbsp;&minus;&nbsp;basic&nbsp;level</li>
-                        <li>Norwegian&nbsp;&minus;&nbsp;basic&nbsp;level</li>
-                    </ul>
+                    <div className="skillText">
+                        <ul>
+                            <li>German&nbsp;&minus;&nbsp;native&nbsp;speaker</li>
+                            <li>English&nbsp;&minus;&nbsp;near&nbsp;native&nbsp;level</li>
+                            <li>Dutch&nbsp;&minus;&nbsp;basic&nbsp;level</li>
+                            <li>Norwegian&nbsp;&minus;&nbsp;basic&nbsp;level</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
             <div id="lowerWaveContainer">

@@ -6,7 +6,8 @@ body {
     height: 100%;
     width: 100%;
 
-    background-color: #3aafa9;
+    //background-color: #3aafa9;
+    background-color:#78685e;
     font-family: "Fredoka", sans-serif;
 }
 
@@ -44,7 +45,7 @@ body.burgerActive {
             height: 100%;
             padding: 4px;
     
-            border-bottom: 2px solid #1d2f2d;
+            border-bottom: 2px solid #c7ff00;
         }
         #firstLine {
             transition: transform $transitionDelay;
@@ -75,7 +76,7 @@ body.burgerActive {
 nav {
     width: 100vw;
 
-    background-color: #17cecc;
+    background-color: #665950;
 
     pointer-events: none;
     opacity: 0;
@@ -83,7 +84,7 @@ nav {
 
     .navItem {
         padding-top: 9vh;
-
+        color: #c7ff00;
         font-size: 4vh;
         list-style: none;
         text-align: center;
@@ -137,6 +138,7 @@ nav.active {
             text-align: left;
             padding-left: 10px;
             font-size: 25px;
+            color:#c7ff00;
 
             #welcomeTextJob {
                 margin-left: 50px;
@@ -156,7 +158,7 @@ nav.active {
     bottom: 5vh;
     padding: 10px;
     display: inline-block;
-    border: solid #1d2f2d;
+    border: solid #c7ff00;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
     position: absolute;
@@ -173,14 +175,15 @@ nav.active {
         width: 100%;
 
         svg {
-            fill: #3b8783;
+            fill: #615752;
         }
     }
 
     #skillTextContainer {
         position: relative;
         z-index: 2;
-        top: 17vh;
+        top: 20vh;
+        color:#c7ff00;
 
         ul {
             margin: 0;
@@ -188,7 +191,12 @@ nav.active {
 
             li {
                 list-style: none;
+
             }
+        }
+        .skillText{
+            color:#dacdc6;
+            padding-bottom: 30px;
         }
     }
 
@@ -199,7 +207,7 @@ nav.active {
         transform: rotate(180deg);
 
         svg {
-            fill: #3b8783;
+            fill: #615752;
         }
     }
 }

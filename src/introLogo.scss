@@ -2,8 +2,7 @@ $delay: 0.5s;
 $aniTime: 1.5s;
 
 .introHidden{
-    opacity: 0;
-    //display: none;
+    opacity: 0%;
     animation: displayContent 2s ease forwards 5s;
 }
 
@@ -21,12 +20,14 @@ body{
     animation: fillLogo 2s ease forwards 2.4s;
 
     path {
-        stroke: black;
+        //stroke: black;
+        stroke: #c7ff00;
         stroke-width: 3px;
     }
     circle {
         fill:transparent;
-        stroke:black;
+        //stroke:black;
+        stroke:#c7ff00;
         stroke-width: 0px;
     }
 }
@@ -85,7 +86,8 @@ body{
         fill: transparent;
     }
     to {
-        fill: #000000;
+        //fill: #000000;
+        fill:#c7ff00;
     }
 }
 @keyframes displayCircle {
@@ -119,11 +121,9 @@ body{
 @keyframes hideLogo{
     from{
         opacity: 100%;
-        display: block;
     }
     to{
         opacity: 0%;
-        display: none;
     }
 }
 @keyframes displayContent{

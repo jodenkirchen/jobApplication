@@ -1,5 +1,5 @@
 .introHidden {
-  opacity: 0;
+  opacity: 0%;
   -webkit-animation: displayContent 2s ease forwards 5s;
           animation: displayContent 2s ease forwards 5s;
 }
@@ -22,13 +22,13 @@ body {
 }
 
 #introLogo path {
-  stroke: black;
+  stroke: #c7ff00;
   stroke-width: 3px;
 }
 
 #introLogo circle {
   fill: transparent;
-  stroke: black;
+  stroke: #c7ff00;
   stroke-width: 0px;
 }
 
@@ -109,7 +109,7 @@ body {
     fill: transparent;
   }
   to {
-    fill: #000000;
+    fill: #c7ff00;
   }
 }
 
@@ -118,7 +118,7 @@ body {
     fill: transparent;
   }
   to {
-    fill: #000000;
+    fill: #c7ff00;
   }
 }
 
@@ -173,22 +173,18 @@ body {
 @-webkit-keyframes hideLogo {
   from {
     opacity: 100%;
-    display: block;
   }
   to {
     opacity: 0%;
-    display: none;
   }
 }
 
 @keyframes hideLogo {
   from {
     opacity: 100%;
-    display: block;
   }
   to {
     opacity: 0%;
-    display: none;
   }
 }
 
