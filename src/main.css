@@ -15,10 +15,6 @@ body {
       scroll-snap-type: y mandatory;
 }
 
-#root .section {
-  scroll-snap-align: start;
-}
-
 body.burgerActive {
   overflow: hidden !important;
 }
@@ -157,7 +153,7 @@ nav.active .navItem {
 }
 
 #intro #welcome #me {
-  max-width: 50%;
+  max-width: 40%;
   border-radius: 0 10px 10px 0;
 }
 
@@ -174,10 +170,11 @@ nav.active .navItem {
 }
 
 #skillsWrapper {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
   text-align: center;
+  overflow-y: hidden;
 }
 
 #skillsWrapper #upperWaveContainer {
@@ -193,7 +190,8 @@ nav.active .navItem {
 #skillsWrapper #skillTextContainer {
   position: relative;
   z-index: 2;
-  top: 20vh;
+  top: 12vh;
+  font-size: 5vmin;
   color: #c7ff00;
 }
 
@@ -221,6 +219,10 @@ nav.active .navItem {
 
 #skillsWrapper #lowerWaveContainer svg {
   fill: #615752;
+}
+
+#languages {
+  margin-bottom: 5vmax;
 }
 
 h2 {

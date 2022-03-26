@@ -16,9 +16,6 @@ body {
     height: 100vh;
     scroll-snap-type: y mandatory;
 
-    .section {
-        scroll-snap-align: start;
-    }
 }
 
 
@@ -146,7 +143,7 @@ nav.active {
             }
         }
         #me {
-            max-width: 50%;
+            max-width: 40%;
             border-radius: 0 10px 10px 0;
         }
     }
@@ -164,10 +161,11 @@ nav.active {
     position: absolute;
 }
 #skillsWrapper {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     text-align: center;
+    overflow-y: hidden;
 
     #upperWaveContainer {
         position: absolute;
@@ -182,7 +180,8 @@ nav.active {
     #skillTextContainer {
         position: relative;
         z-index: 2;
-        top: 20vh;
+        top: 12vh;
+        font-size: 5vmin;
         color:#c7ff00;
 
         ul {
@@ -210,6 +209,10 @@ nav.active {
             fill: #615752;
         }
     }
+}
+
+#languages{
+    margin-bottom: 5vmax;
 }
 
 h2 {
