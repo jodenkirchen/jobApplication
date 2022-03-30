@@ -5,6 +5,7 @@ import Logo from './logo';
 import Content from './content.jsx';
 import Skills from './skills.jsx';
 import Navigation from './navigation.jsx';
+import Timeline from './timeline.jsx';
 //css imports
 import './main.css';
 import './introLogo.css';
@@ -18,6 +19,7 @@ function App(){
       <Navigation />
       <Content />
       <Skills />
+      <Timeline />
     </div>
     
   );
