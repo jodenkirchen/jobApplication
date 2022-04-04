@@ -235,14 +235,15 @@ nav.active .navItem {
   position: absolute;
   width: 2vw;
   background-color: #665950;
-  top: 25vw;
+  top: 10vh;
   bottom: 0;
   left: 30vw;
   content: " ";
 }
 
 .tlContainer {
-  padding: 10px 40px;
+  padding: 12px 0 12px 28px;
+  color: #ebebeb;
 }
 
 .tlContainer::after {
@@ -250,49 +251,37 @@ nav.active .navItem {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  left: 26.5vw;
   background-color: #c7ff00;
-  top: 15px;
+  top: 12vh;
   border-radius: 50%;
   z-index: 1;
-}
-
-.tlLeft {
-  left: 0;
 }
 
 .tlRight {
   left: 50%;
 }
 
-.tlLeft::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-.tlRight::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
 .tlRight::after {
   left: -16px;
+}
+
+.tlContent {
+  display: -ms-grid;
+  display: grid;
+}
+
+#tlFirst {
+  padding-top: 10.5vh;
+}
+
+.tlTextRight {
+  padding-left: 30vw;
+  margin-top: -3.5vh;
+}
+
+.tlTime {
+  color: #c7ff00;
 }
 
 h2 {
