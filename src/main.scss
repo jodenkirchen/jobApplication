@@ -219,6 +219,7 @@ nav.active {
     min-height: 100vh;
     width: 100%;
     position: relative;
+    padding-top: 10.5vh;
 }
 
 #timelineWrapper::after{
@@ -231,8 +232,9 @@ nav.active {
     content: " ";
 }
 .tlContainer {
-    padding: 12px 0 12px 28px;
+    padding: 29px 12px 12px 28px;
     color:#ebebeb;
+    position: relative;
 }
 
 .tlContainer::after {
@@ -242,7 +244,7 @@ nav.active {
     height: 25px;
     left: 26.5vw;
     background-color: #c7ff00;
-    top: 12vh;
+    top: 4vh;
     border-radius: 50%;
     z-index: 1;
   }
