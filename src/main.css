@@ -238,7 +238,7 @@ nav.active .navItem {
   background-color: #665950;
   top: 10vh;
   bottom: 0;
-  left: 30vw;
+  left: 30vmin;
   content: " ";
 }
 
@@ -253,9 +253,9 @@ nav.active .navItem {
   position: absolute;
   width: 25px;
   height: 25px;
-  left: 26.5vw;
+  top: 4vmax;
+  left: 27vmin;
   background-color: #c7ff00;
-  top: 4vh;
   border-radius: 50%;
   z-index: 1;
 }

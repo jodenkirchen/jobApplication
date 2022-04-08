@@ -20,6 +20,7 @@ function Skills() {
                             <li>Gimp</li>
                             <li>Inkscape</li>
                             <li>Figma</li>
+                            <li>Git/GitHub</li>
                         </ul>
 
                     </div>
