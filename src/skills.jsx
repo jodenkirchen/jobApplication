@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 function Skills() {
     return (
         <div id="skillsWrapper" className="introHidden section">
+            <div id="skillsHeading" className="sectionHeading highlight">
+                <h1>Skills</h1>
+            </div>
             <div id="upperWaveContainer">
                 <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
                     <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>

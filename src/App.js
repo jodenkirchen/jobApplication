@@ -6,6 +6,7 @@ import Content from './content.jsx';
 import Skills from './skills.jsx';
 import Navigation from './navigation.jsx';
 import Timeline from './timeline.jsx';
+import Footer from './footer.jsx';
 //css imports
 import './main.css';
 import './introLogo.css';
@@ -20,6 +21,7 @@ function App(){
       <Content />
       <Skills />
       <Timeline />
+      <Footer />
     </div>
     
   );
