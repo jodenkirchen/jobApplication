@@ -27,10 +27,10 @@ body.burgerActive {
 
 #menuWrapper #burgerMenu {
   width: 5vw;
-  margin-left: 6px;
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
   z-index: 10;
+  margin-left: 7px;
+  margin-top: 1px;
 }
 
 #menuWrapper #burgerMenu .line {
@@ -330,10 +330,29 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 375px) {
+  #menuWrapper #burgerMenu {
+    margin-left: 8px;
+    margin-top: 2px;
+  }
+  #intro #welcome #welcomeText {
+    font-size: 26px;
+  }
+  #intro #welcome #welcomeText #welcomeTextJob {
+    font-size: 18px;
+  }
   #languages {
     padding-bottom: 18vmax;
   }
+  #timelineWrapper {
+    font-size: 18px;
+  }
+  .tlContent::after {
+    left: 28.5%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
   .tlContent::after {
     left: 29%;
   }
