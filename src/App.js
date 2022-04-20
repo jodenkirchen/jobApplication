@@ -10,6 +10,8 @@ import Footer from './footer.jsx';
 //css imports
 import './introLogo.css';
 import './main.css';
+import './skills.css';
+import './timeline.css';
 import './footer.css';
 import './mediaQueries.css';
 

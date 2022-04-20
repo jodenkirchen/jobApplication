@@ -169,69 +169,6 @@ nav.active .navItem {
   position: absolute;
 }
 
-#skillsHeading {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-}
-
-#skillsWrapper {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  overflow-y: hidden;
-}
-
-#skillsWrapper #upperWaveContainer {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-}
-
-#skillsWrapper #upperWaveContainer svg {
-  fill: #615752;
-}
-
-#skillsWrapper #skillTextContainer {
-  position: relative;
-  z-index: 2;
-  top: 12vh;
-  font-size: 5vmin;
-  color: #c7ff00;
-}
-
-#skillsWrapper #skillTextContainer ul {
-  margin: 0;
-  padding: 0;
-}
-
-#skillsWrapper #skillTextContainer ul li {
-  list-style: none;
-}
-
-#skillsWrapper #skillTextContainer .skillText {
-  color: #dacdc6;
-  padding-bottom: 30px;
-}
-
-#skillsWrapper #lowerWaveContainer {
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#skillsWrapper #lowerWaveContainer svg {
-  fill: #615752;
-}
-
-#languages {
-  margin-bottom: 5vmax;
-  padding-bottom: 5vmax;
-}
-
 .sectionHeading {
   text-align: center;
 }
@@ -240,7 +177,8 @@ nav.active .navItem {
   color: #c7ff00;
 }
 
-h2 {
+h3 {
   font-size: 5vmin;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */

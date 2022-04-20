@@ -13,7 +13,7 @@ function Skills() {
             </div>
             <div id="skillTextContainer">
                 <div id="webDevelopment">
-                    <h2>Web&nbsp;Development&nbsp;&amp;&nbsp;Design</h2>
+                    <h3>Web&nbsp;Development&nbsp;&amp;&nbsp;Design</h3>
                     <div className="skillText">
                         <ul>
                             <li>HTML</li>
@@ -29,7 +29,7 @@ function Skills() {
                     </div>
                 </div>
                 <div id="softwareDevelopment">
-                    <h2>Software&nbsp;Development&nbsp;&amp;&nbsp;Databases</h2>
+                    <h3>Software&nbsp;Development&nbsp;&amp;&nbsp;Databases</h3>
                     <div className="skillText">
                         <ul>
                             <li>C&#35;</li>
@@ -43,7 +43,7 @@ function Skills() {
                     </div>
                 </div>
                 <div id="languages">
-                    <h2>Languages</h2>
+                    <h3>Languages</h3>
                     <div className="skillText">
                         <ul>
                             <li>German&nbsp;&minus;&nbsp;native&nbsp;speaker</li>

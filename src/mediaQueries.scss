@@ -1,10 +1,14 @@
 @media only screen and (min-width:320px){
     #timelineWrapper::after{
-        max-height: 580px;
+        max-height: 600px;
     }
 }
 
 @media only screen and (min-width:375px){
+    #timelineWrapper::after{
+        max-height: 645px;
+    }
+
     #menuWrapper #burgerMenu{
         margin-left: 8px;
         margin-top: 2px;
@@ -13,8 +17,13 @@
     #intro #welcome #welcomeText{
         font-size:26px;
     }
+
     #intro #welcome #welcomeText #welcomeTextJob{
         font-size:18px;
+    }
+
+    #skillsWrapper #skillTextContainer{
+        font-size: 20px;
     }
 
     #languages{
@@ -22,16 +31,52 @@
     }
 
     #timelineWrapper{
-        font-size:18px;
+        font-size: 18px;
     }
-    
+    .tlContent{
+        padding-left:6%;
+    }
+
     .tlContent::after{ 
         left:28.5%;
     }
 }
  
 @media only screen and (min-width:425px){
+    #menuWrapper #burgerMenu{
+        width:3vw;
+    }
     .tlContent::after{
         left:29%;
+    }
+}
+@media only screen and (min-width:550px){
+    h3{
+        font-size: 4vmin;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width:768px){
+    h3{
+        font-size: 3vmin;
+    }
+    #menuWrapper #burgerMenu{
+        width: 2vw;
+    }
+    #intro #welcome #me{
+        max-width: 30%;
+    }
+    .tlContent{
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (min-width:935px){
+    #skillsWrapper #skillTextContainer{
+        font-size: 22px;
+    }
+    .tlContent::after{
+        left: 268px;
     }
 }
