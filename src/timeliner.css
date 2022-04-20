@@ -1,0 +1,60 @@
+#timelineWrapper {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+#timelineWrapper::after {
+  position: absolute;
+  width: 8px;
+  max-height: 680px;
+  background-color: #665950;
+  top: 8%;
+  bottom: 10%;
+  left: 30vmin;
+  content: " ";
+}
+
+.tlContainer {
+  padding: 29px 12px 12px 28px;
+  color: #ebebeb;
+  position: relative;
+}
+
+.tlRight {
+  left: 50%;
+}
+
+.tlRight::after {
+  left: -16px;
+}
+
+.tlContent {
+  display: -ms-grid;
+  display: grid;
+}
+
+.tlContent::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 28%;
+  background-color: #c7ff00;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#tlFirst {
+  padding-top: 10.5vh;
+}
+
+.tlTextRight {
+  padding-left: 30vw;
+  margin-top: -3.5vh;
+}
+
+#tlLastEntry {
+  padding-bottom: 10vmax;
+}
+/*# sourceMappingURL=timeliner.css.map */

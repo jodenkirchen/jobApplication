@@ -1,0 +1,37 @@
+@media only screen and (min-width:320px){
+    #timelineWrapper::after{
+        max-height: 580px;
+    }
+}
+
+@media only screen and (min-width:375px){
+    #menuWrapper #burgerMenu{
+        margin-left: 8px;
+        margin-top: 2px;
+    }
+
+    #intro #welcome #welcomeText{
+        font-size:26px;
+    }
+    #intro #welcome #welcomeText #welcomeTextJob{
+        font-size:18px;
+    }
+
+    #languages{
+        padding-bottom: 18vmax;
+    }
+
+    #timelineWrapper{
+        font-size:18px;
+    }
+    
+    .tlContent::after{ 
+        left:28.5%;
+    }
+}
+ 
+@media only screen and (min-width:425px){
+    .tlContent::after{
+        left:29%;
+    }
+}

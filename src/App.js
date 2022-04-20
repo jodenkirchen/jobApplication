@@ -8,9 +8,10 @@ import Navigation from './navigation.jsx';
 import Timeline from './timeline.jsx';
 import Footer from './footer.jsx';
 //css imports
-import './main.css';
 import './introLogo.css';
-
+import './main.css';
+import './footer.css';
+import './mediaQueries.css';
 
 
 function App(){
