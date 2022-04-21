@@ -4,8 +4,13 @@ function Content() {
         <div id="contentWrapper" className="introHidden section">
            
             <div id="introWrapper">
+            {/* <svg id="introCircle" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="0" cy="0" r="15"/>
+                </svg> */}
+            
             <div id="intro">
                 <div id="welcome" className="introItem">
+                    <div id="introBackground"></div>
                 <img id="me" src="/media/me.jpg"></img>
                     <div id="welcomeText">
                         Jan Odenkirchen<br />

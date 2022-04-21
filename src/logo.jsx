@@ -1,8 +1,22 @@
 import React from 'react';
+import { gsap } from 'gsap';
+
+const { useEffect, useRef } = React;
+
+// wait until DOM has been rendered
+
+
 function Logo() {
+    const boxRef = useRef();
+    useEffect(() => {
+        gsap.to(boxRef.current, {
+          rotation: "+=3600"
+        });
+      });
+
     return (
         <div id="logoWrapper">
-            <svg id="introLogo" width="50%" height="100vh" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="introLogo" width="50%" height="100vh" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg"  className="boxRef" ref={boxRef}>
                 <path d="M108.825 139.493V181.266H109.429H131.325V139.493H108.825Z"/>
                 <path d="M131.325 198.554H108.825V203.885C108.825 210.376 108.175 214.64 106.875 216.678C105.625 218.668 103.025 219.663 99.0749 219.663C96.6249 219.663 93.6 219.331 90 218.668V236.507C95.7499 237.502 100.325 238 103.725 238C111.575 238 117.5 236.649 121.5 233.949C125.5 231.248 128.125 227.623 129.375 223.075C130.675 218.478 131.325 212.082 131.325 203.885V198.554Z"/>
                 <path d="M172.649 181.266V156.124H210.899V139.493H150.15V181.266H172.649Z"/>

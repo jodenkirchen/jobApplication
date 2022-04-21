@@ -5,6 +5,12 @@
 }
 
 @media only screen and (min-width:375px){
+    #introBackground{
+        margin-top: -2vh;
+        width: 70vw;
+        height: 22vh;
+    }
+
     #timelineWrapper::after{
         max-height: 645px;
     }
@@ -46,6 +52,10 @@
     #menuWrapper #burgerMenu{
         width:3vw;
     }
+    #introBackground{
+        margin-top:-3vh;
+        height: 28vh;
+    }
     .tlContent::after{
         left:29%;
     }
@@ -54,6 +64,14 @@
     h3{
         font-size: 4vmin;
         margin-bottom: 10px;
+    }
+    #introBackground{
+        height: 29vh;
+        margin-top: -2vh;
+        width: 63vw;
+    }
+    #intro #welcome #me{
+        max-width: 28%;
     }
 }
 
@@ -64,8 +82,11 @@
     #menuWrapper #burgerMenu{
         width: 2vw;
     }
+    #introBackground{
+        width: 45vw;
+    }
     #intro #welcome #me{
-        max-width: 30%;
+        max-width: 25%;
     }
     .tlContent{
         padding-left: 10%;

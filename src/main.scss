@@ -143,6 +143,17 @@ nav.active {
     }
 }
 
+#introBackground{
+    position: absolute;
+    z-index: -1;
+    margin-top: -3vh;
+    margin-left: -6vw;
+    width: 68vw;
+    height: 20vh;
+    background-color: #615752;
+    border-radius: 20px;
+}
+
 #arrowIntro {
     right: 5vh;
     bottom: 5vh;
