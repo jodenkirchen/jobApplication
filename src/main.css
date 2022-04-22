@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -19,13 +24,7 @@ body.burgerActive {
   overflow: hidden !important;
 }
 
-#menuWrapper {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-}
-
-#menuWrapper #burgerMenu {
+#burgerMenu {
   width: 5vw;
   position: absolute;
   z-index: 10;
@@ -33,26 +32,26 @@ body.burgerActive {
   margin-top: 1px;
 }
 
-#menuWrapper #burgerMenu .line {
+#burgerMenu .line {
   width: 100%;
   height: 100%;
   padding: 4px;
   border-bottom: 2px solid #c7ff00;
 }
 
-#menuWrapper #burgerMenu #firstLine {
+#burgerMenu #firstLine {
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-#menuWrapper #burgerMenu #firstLine.active {
+#burgerMenu #firstLine.active {
   -webkit-transform: rotate(45deg) translate(9px, 6px);
           transform: rotate(45deg) translate(9px, 6px);
 }
 
-#menuWrapper #burgerMenu #secondLine {
+#burgerMenu #secondLine {
   opacity: 100%;
   width: 60%;
   -webkit-transition: -webkit-transform 0.2s;
@@ -61,31 +60,31 @@ body.burgerActive {
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-#menuWrapper #burgerMenu #secondLine.active {
+#burgerMenu #secondLine.active {
   opacity: 0;
 }
 
-#menuWrapper #burgerMenu #thirdLine {
+#burgerMenu #thirdLine {
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-#menuWrapper #burgerMenu #thirdLine.active {
+#burgerMenu #thirdLine.active {
   -webkit-transform: rotate(-45deg) translate(4px, -9px);
           transform: rotate(-45deg) translate(4px, -9px);
 }
 
-nav {
+#nav {
   width: 100vw;
+  opacity: 0%;
   background-color: #665950;
   pointer-events: none;
-  opacity: 0;
   height: 0;
 }
 
-nav .navItem {
+#nav .navItem {
   padding-top: 9vh;
   color: #c7ff00;
   font-size: 4vh;
@@ -94,21 +93,18 @@ nav .navItem {
   opacity: 0;
 }
 
-nav.active {
+#nav.active {
   height: 100vh;
   opacity: 100%;
   padding-top: 10vh;
-  -webkit-transition: height 0.5s ease-in;
-  transition: height 0.5s ease-in;
   position: absolute;
   top: 0;
   z-index: 9;
+  display: block;
 }
 
-nav.active .navItem {
+#nav.active .navItem {
   opacity: 100%;
-  -webkit-transition: opacity 0.5s ease-in;
-  transition: opacity 0.5s ease-in;
 }
 
 #contentWrapper {
@@ -182,6 +178,7 @@ nav.active .navItem {
 
 .sectionHeading {
   text-align: center;
+  padding-top: 10px;
 }
 
 .highlight {

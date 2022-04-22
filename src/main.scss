@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+*{
+    margin:0;
+    padding:0;
+   }
 body {
     margin: 0;
     padding: 0;
@@ -13,18 +17,13 @@ body {
 
 #root {
     overflow: scroll;
-    height: 100vh;
+    height: 100vh; 
     scroll-snap-type: y mandatory;
 }
 
 body.burgerActive {
     overflow: hidden !important;
 }
-
-#menuWrapper {
-    position: absolute;
-    top: 0;
-    z-index: 2;
 
     #burgerMenu {
         $transitionDelay: 0.2s;
@@ -64,15 +63,13 @@ body.burgerActive {
             transform: rotate(-45deg) translate(4px, -9px);
         }
     }
-}
 
-nav {
+#nav { 
     width: 100vw;
-
+    opacity: 0%;
     background-color: #665950;
 
     pointer-events: none;
-    opacity: 0;
     height: 0;
 
     .navItem {
@@ -84,18 +81,17 @@ nav {
         opacity: 0;
     }
 }
-nav.active {
+#nav.active {
     height: 100vh;
     opacity: 100%;
     padding-top: 10vh;
-    transition: height 0.5s ease-in;
     position: absolute;
     top: 0;
     z-index: 9;
+    display:block;
 
     .navItem {
         opacity: 100%;
-        transition: opacity 0.5s ease-in;
     }
 }
 
@@ -167,6 +163,7 @@ nav.active {
 
 .sectionHeading{
     text-align: center;
+    padding-top: 10px;
 }
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 function Timeline() {
     return (
         <div id="timelineWrapper" className="introHidden section">
-            <div className="sectionHeading highlight">
+            <div id="tlHeading" className="sectionHeading highlight">
                 <h1>Timeline</h1>
             </div>
             <div className="tlContainer">

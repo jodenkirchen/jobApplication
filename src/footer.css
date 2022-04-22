@@ -1,18 +1,18 @@
 footer {
-  padding-bottom: 5vmin;
+  padding-bottom: 2%;
   width: 100%;
   background-color: #5a4f46;
 }
 
 footer img {
   display: block;
-  width: 30vw;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #footerText {
-  padding: 5vmin 0  3vmin 0;
+  padding: 2% 0  2% 0;
   color: #c7ff00;
   text-align: center;
   text-transform: uppercase;
@@ -20,6 +20,6 @@ footer img {
 
 #copyright {
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 2%;
 }
 /*# sourceMappingURL=footer.css.map */
