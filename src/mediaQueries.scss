@@ -103,6 +103,25 @@
 }
 
 @media only screen and (min-width:1024px){
+    .menuActive{
+        visibility: visible;
+    }
+
+    #nav{
+        display:block;
+        height: auto;
+        text-align: center;
+        background-color: #78685e;
+        padding: 16px 0 16px 0;
+
+        .navItem{
+            opacity: 100%;
+            text-align: unset;
+            display: inline;
+            font-size: 1.3rem;
+            padding-left: 16px;
+        }
+    }
     #burgerMenu{
         display:none;
     }
