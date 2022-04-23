@@ -15,12 +15,6 @@ body {
     font-family: "Fredoka", sans-serif;
 }
 
-#root {
-    overflow: scroll;
-    height: 100vh; 
-    scroll-snap-type: y mandatory;
-}
-
 body.burgerActive {
     overflow: hidden !important;
 }
@@ -64,12 +58,16 @@ body.burgerActive {
         }
     }
 
+#menuWrapper{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+    
 #nav { 
     width: 100vw;
-    opacity: 0%;
     background-color: #665950;
-
-    pointer-events: none;
+    display:none;
     height: 0;
 
     .navItem {
@@ -166,6 +164,9 @@ body.burgerActive {
     padding-top: 10px;
 }
 
+.menuActive{
+    visibility: hidden !important;
+}
 
 .highlight {
     color: #c7ff00;

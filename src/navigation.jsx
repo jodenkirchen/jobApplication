@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {Link} from "react-scroll";
+import {footerSection} from './footer.jsx';
 
 function Navigation() {
 
@@ -7,18 +8,24 @@ function Navigation() {
 
     function burgerSwap() {
         document.body.classList.toggle("burgerActive");
+        var sections = document.getElementsByClassName("section");
+        footerSection.current.classList.toggle("menuActive");
+
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].classList.toggle("menuActive");
+          }
     }
     return (
-        <div className="introHidden">
+        <div id="menuWrapper" className="introHidden">
             <div id="burgerMenu" onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>
                 <div id="firstLine" className={burgerActive ? "line active" : "line"}></div>
                 <div id="secondLine" className={burgerActive ? "line active" : "line"}></div>
                 <div id="thirdLine" className={burgerActive ? "line active" : "line"}></div>
             </div>
             <div id="nav" className={burgerActive ? "active" : null}>
-                <li className="navItem"><Link to="contentWrapper" spy={true} smooth={true} offset={50} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Home</Link></li>
-                <li className="navItem"><Link to="skillsWrapper" spy={true} smooth={true} offset={50} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Skills</Link></li>
-                <li className="navItem"><Link to="timelineWrapper" spy={true} smooth={true} offset={50} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Timeline</Link></li>
+                <li className="navItem"><Link to="contentWrapper" spy={true} smooth={true} offset={0} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Home</Link></li>
+                <li className="navItem"><Link to="skillsWrapper" spy={true} smooth={true} offset={0} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Skills</Link></li>
+                <li className="navItem"><Link to="timelineWrapper" spy={true} smooth={true} offset={0} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Timeline</Link></li>
             </div>
         </div>
 

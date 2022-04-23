@@ -13,13 +13,6 @@ body {
   font-family: "Fredoka", sans-serif;
 }
 
-#root {
-  overflow: scroll;
-  height: 100vh;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
 body.burgerActive {
   overflow: hidden !important;
 }
@@ -76,11 +69,17 @@ body.burgerActive {
           transform: rotate(-45deg) translate(4px, -9px);
 }
 
+#menuWrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 #nav {
   width: 100vw;
-  opacity: 0%;
   background-color: #665950;
-  pointer-events: none;
+  display: none;
   height: 0;
 }
 
@@ -179,6 +178,10 @@ body.burgerActive {
 .sectionHeading {
   text-align: center;
   padding-top: 10px;
+}
+
+.menuActive {
+  visibility: hidden !important;
 }
 
 .highlight {
