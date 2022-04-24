@@ -1,0 +1,64 @@
+#introWrapper {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+}
+
+#intro {
+    padding-top: 27vh;
+
+    .introItem {
+        //background-color: #f0f0f0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75vw;
+        border-radius: 10px;
+        //box-shadow: 0px 2px 4px gray, 2px 3px 15px gray, 10px 3px 15px gray;
+    }
+    #welcome {
+        display: inline-flex;
+        #welcomeText {
+            margin: 15px 0 0 -57px;
+            padding: 0;
+            width: 50%;
+            text-align: left;
+            padding-left: 10px;
+            font-size: 25px;
+            color: #c7ff00;
+
+            #welcomeTextJob {
+                margin-left: 50px;
+                font-size: 14px;
+            }
+        }
+        #me {
+            max-width: 40%;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}
+
+#introBackground {
+    position: absolute;
+    z-index: -1;
+    margin-top: -34px;
+    width: 65vw;
+    height: 150px;
+    background-color: #615752;
+    border-radius: 0 20px 20px 0;
+}
+
+#arrowIntro {
+    right: 5vh;
+    bottom: 5vh;
+    padding: 10px;
+    display: inline-block;
+    border: solid #c7ff00;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: absolute;
+}

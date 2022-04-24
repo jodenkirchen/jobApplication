@@ -63,7 +63,7 @@ function Navigation() {
                 <div id="thirdLine" className={`${lineClick}`}></div>
             </div>
             <div id="nav">
-                <li className="navItem"><Link to="contentWrapper" spy={true} smooth={true} offset={offSet} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }} >Home</Link></li>
+                <li className="navItem"><Link to="introWrapper" spy={true} smooth={true} offset={offSet} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }} >Home</Link></li>
                 <li className="navItem"><Link to="skillsWrapper" spy={true} smooth={true} offset={offSet} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Skills</Link></li>
                 <li className="navItem"><Link to="timelineWrapper" spy={true} smooth={true} offset={offSet} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Timeline</Link></li>
             </div>
