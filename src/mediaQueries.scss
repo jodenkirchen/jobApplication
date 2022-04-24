@@ -6,9 +6,8 @@
 
 @media only screen and (min-width:375px){
     #introBackground{
-        margin-top: -2vh;
-        width: 70vw;
-        height: 22vh;
+        margin-top: -38px;
+        height: 170px;
     }
 
     #timelineWrapper::after{
@@ -53,8 +52,11 @@
         width:3vw;
     }
     #introBackground{
-        margin-top:-3vh;
-        height: 28vh;
+        margin-top: -65px;
+        height: 195px;
+    }    
+    #intro #welcome #me{
+        margin-top:-20px;
     }
     .tlContent::after{
         left:29%;
@@ -66,12 +68,19 @@
         margin-bottom: 10px;
     }
     #introBackground{
-        height: 29vh;
-        margin-top: -2vh;
-        width: 63vw;
+        height: 160px;
+        margin-top: -40px;
+        width: 54vw;
     }
     #intro #welcome #me{
         max-width: 28%;
+        margin-top: 5px;
+    }
+    .sectionHeading{
+        padding: 4% 0 4% 0 ;
+    }
+    footer img{
+        width: 20%;
     }
 }
 
@@ -83,13 +92,16 @@
         width: 2vw;
     }
     #introBackground{
-        width: 45vw;
+        width: 35vw;
     }
     #intro #welcome #me{
-        max-width: 25%;
+        max-width: 20%;
     }
     .tlContent{
         padding-left: 10%;
+    }
+    footer img{
+        width: 15%;
     }
 }
 
@@ -99,6 +111,9 @@
     }
     .tlContent::after{
         left: 268px;
+    }
+    footer img{
+        width: 12%;
     }
 }
 
@@ -125,5 +140,10 @@
     #burgerMenu{
         display:none;
     }
-    
+    #arrowIntro{
+        bottom: 10%;
+    }
+    footer img{
+        width: 10%;
+    }
 }

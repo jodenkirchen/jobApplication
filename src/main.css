@@ -155,12 +155,11 @@ body.burgerActive {
 #introBackground {
   position: absolute;
   z-index: -1;
-  margin-top: -3vh;
-  margin-left: -6vw;
-  width: 68vw;
-  height: 20vh;
+  margin-top: -34px;
+  width: 65vw;
+  height: 150px;
   background-color: #615752;
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0;
 }
 
 #arrowIntro {
@@ -177,7 +176,7 @@ body.burgerActive {
 
 .sectionHeading {
   text-align: center;
-  padding-top: 10px;
+  padding-top: 8%;
 }
 
 .menuActive {

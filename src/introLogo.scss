@@ -20,13 +20,11 @@ body{
     animation: fillLogo 2s ease forwards 2.4s;
 
     path {
-        //stroke: black;
         stroke: #c7ff00;
         stroke-width: 3px;
     }
     circle {
         fill:transparent;
-        //stroke:black;
         stroke:#c7ff00;
         stroke-width: 0px;
     }
@@ -86,7 +84,6 @@ body{
         fill: transparent;
     }
     to {
-        //fill: #000000;
         fill:#c7ff00;
     }
 }
@@ -111,12 +108,6 @@ body{
     100%{
         fill:#000000;
     }
-    //67%{
-    //    fill
-   // }
-    //100%{
-    //    fill: transparent;
-    //}
 }
 @keyframes hideLogo{
     from{
