@@ -10,7 +10,7 @@ const { useEffect, useRef } = React;
 function Logo() {
     const boxRef = useRef();
     useEffect(() => {
-        var Scroll = require('react-scroll')
+        var Scroll = require('react-scroll');
         var scroll = Scroll.animateScroll;
         scroll.scrollToTop();
         gsap.to(boxRef.current, {

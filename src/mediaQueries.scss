@@ -162,6 +162,27 @@
     #arrowIntro {
         bottom: 10%;
     }
+    #skillsWrapper {
+        padding-top: 80vh;
+        background-color: #615752;
+        #upperWaveContainer {
+            margin-top: -20vh;
+        }
+        #skillTextContainer {
+            color: #615752;
+
+            .skillText {
+                color: #615752;
+            }
+        }
+        #lowerWaveContainer {
+            display: none;
+        }
+    }
+    #skillsHeading {
+        color: #615752;
+    }
+
     footer img {
         width: 10%;
     }

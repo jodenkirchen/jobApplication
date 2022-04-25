@@ -1,13 +1,81 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useCallback, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Skills() {
+    var screenWidth = window.innerWidth;
+    var isMobile = useState(true);
+    const waveRef = useRef();
+    const skillsWrapperRef = useRef();
+    gsap.registerPlugin(ScrollTrigger);
+
+    const handleWindowResize = useCallback(event => {
+        screenWidth = window.innerWidth;
+    }, []);
+
+
+    function skillsWrapperOpacityMatch() {
+        console.log("yo");
+        if (getComputedStyle(skillsWrapperRef.current).opacity == 1) {
+
+            const endOffsetWindow = (window.innerHeight * 0.7);
+            const endOffsetBox = (window.innerHeight * 0.5);
+            const startOffsetBoxText = (window.innerHeight * 0.5);
+
+            gsap.to(waveRef.current, {
+                scrollTrigger: {
+                    trigger: "#upperWave",
+                    start: "top bottom",
+                    end: "" + endOffsetBox + " " + endOffsetWindow,
+                    markers: true,
+                    scrub: true
+                },
+                fill: "#78685e",
+                duration: 10
+            });
+            gsap.to("#skillsWrapper #skillTextContainer", {
+                scrollTrigger: {
+                    trigger: "#upperWave",
+                    start: "" + startOffsetBoxText + " bottom",
+                    end: "" + endOffsetBox + " " + endOffsetWindow,
+                    markers: true,
+                    scrub: true
+                },
+                color: "#c7ff00"
+            });
+            gsap.to("#skillsWrapper #skillTextContainer .skillText", {
+                scrollTrigger: {
+                    trigger: "#upperWave",
+                    start: "" + startOffsetBoxText + " bottom",
+                    end: "" + endOffsetBox + " " + endOffsetWindow,
+                    markers: true,
+                    scrub: true
+                },
+                color: "#c7ff00"
+            });
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowResize);
+        if (screenWidth >= 1024) {
+            console.log();
+
+        }
+        skillsWrapperRef.current.addEventListener("animationend", skillsWrapperOpacityMatch);
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+
+    }, [handleWindowResize]);
+
     return (
-        <div id="skillsWrapper" className="introHidden section">
+        <div id="skillsWrapper" className="introHidden section" ref={skillsWrapperRef}>
             <div id="skillsHeading" className="sectionHeading highlight">
                 <h1>Skills</h1>
             </div>
             <div id="upperWaveContainer">
-                <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                <svg id="upperWave" viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet" ref={waveRef}>
                     <path d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"></path>
                 </svg>
             </div>

@@ -15,6 +15,7 @@ function Navigation() {
         if (window.innerWidth < 1024) {
             setBurgerActive(burgerActive);
         }
+        offSet = -48;
         var sections = document.getElementsByClassName("section");
         if (sections[0].classList.contains("menuActive")) {
             footerSection.current.classList.toggle("menuActive");
