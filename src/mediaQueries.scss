@@ -9,11 +9,6 @@
         margin-top: -38px;
         height: 170px;
     }
-
-    #timelineWrapper::after {
-        max-height: 645px;
-    }
-
     #menuWrapper #burgerMenu {
         margin-left: 8px;
         margin-top: 2px;
@@ -38,12 +33,18 @@
     #timelineWrapper {
         font-size: 1.1rem;
     }
+
+    #timelineWrapper::after {
+        max-height: 645px;
+        margin-left: 110px;
+    }
+
     .tlContent {
         padding-left: 6%;
     }
 
     .tlContent::after {
-        left: 28.5%;
+        left: 104px;
     }
 }
 
@@ -58,8 +59,11 @@
     #intro #welcome #me {
         margin-top: -20px;
     }
+    #timelineWrapper::after {
+        margin-left: 120px;
+    }
     .tlContent::after {
-        left: 29%;
+        left: 114px;
     }
 }
 @media only screen and (min-width: 550px) {
@@ -79,8 +83,14 @@
     .sectionHeading {
         padding: 4% 0 4% 0;
     }
-    footer img {
-        width: 20%;
+    #timelineWrapper::after {
+        margin-left: 160px;
+    }
+    .tlContent::after {
+        left: 154px;
+        footer img {
+            width: 20%;
+        }
     }
 }
 
@@ -94,8 +104,14 @@
     #intro #welcome #me {
         max-width: 20%;
     }
+    #timelineWrapper::after {
+        margin-left: 230px;
+    }
     .tlContent {
-        padding-left: 10%;
+        padding-left: 16%;
+    }
+    .tlContent::after {
+        left: 224px;
     }
     footer img {
         width: 15%;
@@ -106,8 +122,14 @@
     #skillsWrapper #skillTextContainer {
         font-size: 1.35rem;
     }
+    #timelineWrapper::after {
+        margin-left: 340px;
+    }
+    .tlContainer {
+        padding: 29px 12px 12px 108px;
+    }
     .tlContent::after {
-        left: 268px;
+        left: 334px;
     }
     footer img {
         width: 12%;

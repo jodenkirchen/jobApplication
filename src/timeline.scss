@@ -7,15 +7,15 @@
 #timelineWrapper::after {
     position: absolute;
     width: 8px;
-    max-height:680px;
+    max-height: 680px;
     background-color: #665950;
-    top: 15%;
-    bottom:10%;
-    margin-left: 30vmin;
+    top: 16%;
+    bottom: 10%;
+    margin-left: 96px;
     content: " ";
 }
 
-#tlHeading{
+#tlHeading {
     padding-bottom: 70px;
 }
 
@@ -41,7 +41,7 @@
     position: absolute;
     width: 19px;
     height: 19px;
-    left: 28%;
+    left: 90px;
     background-color: #c7ff00;
     border-radius: 50%;
     z-index: 1;
@@ -56,6 +56,6 @@
     margin-top: -3.5vh;
 }
 
-#tlLastEntry{
+#tlLastEntry {
     padding-bottom: 10vmax;
 }
