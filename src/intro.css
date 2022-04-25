@@ -30,13 +30,13 @@
   width: 50%;
   text-align: left;
   padding-left: 10px;
-  font-size: 25px;
+  font-size: 1.4rem;
   color: #c7ff00;
 }
 
 #intro #welcome #welcomeText #welcomeTextJob {
   margin-left: 50px;
-  font-size: 14px;
+  font-size: 0.95rem;
 }
 
 #intro #welcome #me {

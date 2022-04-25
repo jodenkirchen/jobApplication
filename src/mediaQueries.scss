@@ -1,135 +1,132 @@
-@media only screen and (min-width:320px){
-    #timelineWrapper::after{
+@media only screen and (min-width: 320px) {
+    #timelineWrapper::after {
         max-height: 600px;
     }
 }
 
-@media only screen and (min-width:375px){
-    #introBackground{
+@media only screen and (min-width: 375px) {
+    #introBackground {
         margin-top: -38px;
         height: 170px;
     }
 
-    #timelineWrapper::after{
+    #timelineWrapper::after {
         max-height: 645px;
     }
 
-    #menuWrapper #burgerMenu{
+    #menuWrapper #burgerMenu {
         margin-left: 8px;
         margin-top: 2px;
     }
 
-    #intro #welcome #welcomeText{
-        font-size:26px;
+    #intro #welcome #welcomeText {
+        font-size: 1.6rem;
     }
 
-    #intro #welcome #welcomeText #welcomeTextJob{
-        font-size:18px;
+    #intro #welcome #welcomeText #welcomeTextJob {
+        font-size: 1.1rem;
     }
 
-    #skillsWrapper #skillTextContainer{
-        font-size: 20px;
+    #skillsWrapper #skillTextContainer {
+        font-size: 1.2rem;
     }
 
-    #languages{
+    #languages {
         padding-bottom: 18vmax;
     }
 
-    #timelineWrapper{
-        font-size: 18px;
+    #timelineWrapper {
+        font-size: 1.1rem;
     }
-    .tlContent{
-        padding-left:6%;
+    .tlContent {
+        padding-left: 6%;
     }
 
-    .tlContent::after{ 
-        left:28.5%;
+    .tlContent::after {
+        left: 28.5%;
     }
 }
- 
-@media only screen and (min-width:425px){
-    #menuWrapper #burgerMenu{
-        width:3vw;
+
+@media only screen and (min-width: 425px) {
+    #menuWrapper #burgerMenu {
+        width: 3vw;
     }
-    #introBackground{
+    #introBackground {
         margin-top: -65px;
         height: 195px;
-    }    
-    #intro #welcome #me{
-        margin-top:-20px;
     }
-    .tlContent::after{
-        left:29%;
+    #intro #welcome #me {
+        margin-top: -20px;
+    }
+    .tlContent::after {
+        left: 29%;
     }
 }
-@media only screen and (min-width:550px){
-    h3{
-        font-size: 4vmin;
+@media only screen and (min-width: 550px) {
+    h3 {
+        font-size: 1.5rem;
         margin-bottom: 10px;
     }
-    #introBackground{
+    #introBackground {
         height: 160px;
         margin-top: -40px;
         width: 54vw;
     }
-    #intro #welcome #me{
+    #intro #welcome #me {
         max-width: 28%;
         margin-top: 5px;
     }
-    .sectionHeading{
-        padding: 4% 0 4% 0 ;
+    .sectionHeading {
+        padding: 4% 0 4% 0;
     }
-    footer img{
+    footer img {
         width: 20%;
     }
 }
 
-@media only screen and (min-width:768px){
-    h3{
-        font-size: 3vmin;
-    }
-    #menuWrapper #burgerMenu{
+@media only screen and (min-width: 768px) {
+    #menuWrapper #burgerMenu {
         width: 2vw;
     }
-    #introBackground{
+    #introBackground {
         width: 35vw;
     }
-    #intro #welcome #me{
+    #intro #welcome #me {
         max-width: 20%;
     }
-    .tlContent{
+    .tlContent {
         padding-left: 10%;
     }
-    footer img{
+    footer img {
         width: 15%;
     }
 }
 
-@media only screen and (min-width:935px){
-    #skillsWrapper #skillTextContainer{
-        font-size: 22px;
+@media only screen and (min-width: 935px) {
+    #skillsWrapper #skillTextContainer {
+        font-size: 1.35rem;
     }
-    .tlContent::after{
+    .tlContent::after {
         left: 268px;
     }
-    footer img{
+    footer img {
         width: 12%;
     }
 }
 
-@media only screen and (min-width:1024px){
-    .menuActive{
+@media only screen and (min-width: 1024px) {
+    .menuActive {
         visibility: visible;
     }
 
-    #nav{
-        display:block;
+    #nav {
+        display: block;
         height: auto;
         text-align: center;
         background-color: #78685e;
         padding: 16px 0 16px 0;
 
-        .navItem{
+        .navItem {
             opacity: 100%;
             text-align: unset;
             display: inline;
@@ -137,13 +134,13 @@
             padding-left: 16px;
         }
     }
-    #burgerMenu{
-        display:none;
+    #burgerMenu {
+        display: none;
     }
-    #arrowIntro{
+    #arrowIntro {
         bottom: 10%;
     }
-    footer img{
+    footer img {
         width: 10%;
     }
 }

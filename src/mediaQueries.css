@@ -17,19 +17,19 @@
     margin-top: 2px;
   }
   #intro #welcome #welcomeText {
-    font-size: 26px;
+    font-size: 1.6rem;
   }
   #intro #welcome #welcomeText #welcomeTextJob {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   #skillsWrapper #skillTextContainer {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
   #languages {
     padding-bottom: 18vmax;
   }
   #timelineWrapper {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   .tlContent {
     padding-left: 6%;
@@ -57,7 +57,7 @@
 
 @media only screen and (min-width: 550px) {
   h3 {
-    font-size: 4vmin;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
   #introBackground {
@@ -78,9 +78,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  h3 {
-    font-size: 3vmin;
-  }
   #menuWrapper #burgerMenu {
     width: 2vw;
   }
@@ -100,7 +97,7 @@
 
 @media only screen and (min-width: 935px) {
   #skillsWrapper #skillTextContainer {
-    font-size: 22px;
+    font-size: 1.35rem;
   }
   .tlContent::after {
     left: 268px;
