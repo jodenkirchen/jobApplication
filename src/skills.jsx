@@ -11,12 +11,13 @@ function Skills() {
 
     const handleWindowResize = useCallback(event => {
         screenWidth = window.innerWidth;
+        skillsWrapperOpacityMatch();
+
     }, []);
 
 
     function skillsWrapperOpacityMatch() {
-        console.log("yo");
-        if (getComputedStyle(skillsWrapperRef.current).opacity == 1) {
+        if (getComputedStyle(skillsWrapperRef.current).opacity == 1 && window.innerWidth >= 1024) {
 
             const endOffsetWindow = (window.innerHeight * 0.35);
             const endOffsetBox = (window.innerHeight * 0.4);
@@ -27,7 +28,6 @@ function Skills() {
                     trigger: "#upperWave",
                     start: "" + startOffsetBoxText + " bottom",
                     end: "" + endOffsetBox + " " + endOffsetWindow,
-                    markers: true,
                     scrub: true
                 },
                 fill: "#5a4f46",
@@ -38,7 +38,6 @@ function Skills() {
                     trigger: "#upperWave",
                     start: "" + startOffsetBoxText + " bottom",
                     end: "" + endOffsetBox + " " + endOffsetWindow,
-                    markers: true,
                     scrub: true
                 },
                 color: "#c7ff00"
@@ -48,7 +47,6 @@ function Skills() {
                     trigger: "#upperWave",
                     start: "" + startOffsetBoxText + " bottom",
                     end: "" + endOffsetBox + " " + endOffsetWindow,
-                    markers: true,
                     scrub: true
                 },
                 color: "#c7ff00"
@@ -58,7 +56,6 @@ function Skills() {
                     trigger: "#upperWave",
                     start: "" + startOffsetBoxText + " bottom",
                     end: "" + endOffsetBox + " " + endOffsetWindow,
-                    markers: true,
                     scrub: true
                 },
                 color: "#c7ff00",
@@ -68,7 +65,6 @@ function Skills() {
                     trigger: "#upperWave",
                     start: "" + startOffsetBoxText + " bottom",
                     end: "" + endOffsetBox + " " + endOffsetWindow,
-                    markers: true,
                     scrub: true
                 },
                 marginLeft: (window.innerWidth * 0.25),
@@ -78,6 +74,29 @@ function Skills() {
                 boxShadow: "10px 7px #00000017",
                 backgroundColor: "#5a4f45"
             });
+        }
+
+        if (getComputedStyle(skillsWrapperRef.current).opacity == 1 && window.innerWidth < 1024) {
+            //remove the scroll animation if already applied and remove the current styles applied by gsap
+            gsap.killTweensOf(waveRef.current);
+            waveRef.current.removeAttribute("style");
+            gsap.killTweensOf("#skillsWrapper #skillTextContainer");
+            document.getElementById("skillTextContainer").removeAttribute("style");
+            gsap.killTweensOf("#skillsHeading");
+            document.getElementById("skillsHeading").removeAttribute("style");
+
+            gsap.killTweensOf(".skillSection");
+            gsap.killTweensOf("#skillsWrapper #skillTextContainer .skillText");
+
+            const skillSections = document.getElementsByClassName("skillSection");
+            const skillTexts = document.getElementsByClassName("skillTexts");
+
+            for (var i = 0; i < skillSections.length; i++) {
+                skillSections[i].removeAttribute("style");
+            }
+            for (var x = 0; x < skillTexts.length; i++) {
+                skillTexts[x].removeAttribute("style");
+            }
         }
     }
 
