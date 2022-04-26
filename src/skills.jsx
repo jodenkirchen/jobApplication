@@ -18,22 +18,32 @@ function Skills() {
         console.log("yo");
         if (getComputedStyle(skillsWrapperRef.current).opacity == 1) {
 
-            const endOffsetWindow = (window.innerHeight * 0.7);
-            const endOffsetBox = (window.innerHeight * 0.5);
-            const startOffsetBoxText = (window.innerHeight * 0.5);
+            const endOffsetWindow = (window.innerHeight * 0.35);
+            const endOffsetBox = (window.innerHeight * 0.4);
+            const startOffsetBoxText = (window.innerHeight * 0.45);
 
             gsap.to(waveRef.current, {
                 scrollTrigger: {
                     trigger: "#upperWave",
-                    start: "top bottom",
+                    start: "" + startOffsetBoxText + " bottom",
                     end: "" + endOffsetBox + " " + endOffsetWindow,
                     markers: true,
                     scrub: true
                 },
-                fill: "#78685e",
+                fill: "#5a4f46",
                 duration: 10
             });
             gsap.to("#skillsWrapper #skillTextContainer", {
+                scrollTrigger: {
+                    trigger: "#upperWave",
+                    start: "" + startOffsetBoxText + " bottom",
+                    end: "" + endOffsetBox + " " + endOffsetWindow,
+                    markers: true,
+                    scrub: true
+                },
+                color: "#c7ff00"
+            });
+            gsap.to("#skillsHeading", {
                 scrollTrigger: {
                     trigger: "#upperWave",
                     start: "" + startOffsetBoxText + " bottom",
@@ -51,7 +61,22 @@ function Skills() {
                     markers: true,
                     scrub: true
                 },
-                color: "#c7ff00"
+                color: "#c7ff00",
+            });
+            gsap.to(".skillSection", {
+                scrollTrigger: {
+                    trigger: "#upperWave",
+                    start: "" + startOffsetBoxText + " bottom",
+                    end: "" + endOffsetBox + " " + endOffsetWindow,
+                    markers: true,
+                    scrub: true
+                },
+                marginLeft: (window.innerWidth * 0.25),
+                marginRight: (window.innerWidth * 0.25),
+                marginBottom: 60,
+                borderRadius: 25,
+                boxShadow: "10px 7px #00000017",
+                backgroundColor: "#5a4f45"
             });
         }
     }
@@ -80,7 +105,7 @@ function Skills() {
                 </svg>
             </div>
             <div id="skillTextContainer">
-                <div id="webDevelopment">
+                <div id="webDevelopment" className="skillSection">
                     <h3>Web&nbsp;Development&nbsp;&amp;&nbsp;Design</h3>
                     <div className="skillText">
                         <ul>
@@ -96,7 +121,7 @@ function Skills() {
 
                     </div>
                 </div>
-                <div id="softwareDevelopment">
+                <div id="softwareDevelopment" className="skillSection">
                     <h3>Software&nbsp;Development&nbsp;&amp;&nbsp;Databases</h3>
                     <div className="skillText">
                         <ul>
@@ -110,7 +135,7 @@ function Skills() {
 
                     </div>
                 </div>
-                <div id="languages">
+                <div id="languages" className="skillSection">
                     <h3>Languages</h3>
                     <div className="skillText">
                         <ul>

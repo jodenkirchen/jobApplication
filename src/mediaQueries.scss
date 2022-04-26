@@ -163,16 +163,19 @@
         bottom: 10%;
     }
     #skillsWrapper {
-        padding-top: 80vh;
-        background-color: #615752;
+        background-color: #78685e;
+        padding-bottom: 100px;
         #upperWaveContainer {
-            margin-top: -20vh;
+            svg {
+                fill: #78685e;
+            }
         }
         #skillTextContainer {
-            color: #615752;
+            margin-top: 250px;
+            color: #78685e;
 
             .skillText {
-                color: #615752;
+                color: #78685e;
             }
         }
         #lowerWaveContainer {
@@ -180,10 +183,22 @@
         }
     }
     #skillsHeading {
-        color: #615752;
+        margin-top: 250px;
+        color: #78685e;
     }
-
-    footer img {
-        width: 10%;
+    #languages {
+        padding-bottom: 0;
+    }
+    #timelineWrapper {
+        background-color: #5a4f46;
+    }
+    #timelineWrapper::after {
+        background-color: #78685e;
+    }
+    footer {
+        background-color: #615752;
+        img {
+            width: 10%;
+        }
     }
 }
