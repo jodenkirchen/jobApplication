@@ -17,7 +17,29 @@ function Skills() {
 
 
     function skillsWrapperOpacityMatch() {
+
         if (getComputedStyle(skillsWrapperRef.current).opacity == 1 && window.innerWidth >= 1024) {
+
+            //remove current style values and tweens so it doenst crash on rescale
+            gsap.killTweensOf(waveRef.current);
+            gsap.killTweensOf("#skillsWrapper #skillTextContainer");
+            gsap.killTweensOf("#skillsHeading");
+            gsap.killTweensOf(".skillSection");
+            gsap.killTweensOf("#skillsWrapper #skillTextContainer .skillText");
+
+            const skillSections = document.getElementsByClassName("skillSection");
+            const skillTexts = document.getElementsByClassName("skillTexts");
+
+            waveRef.current.removeAttribute("style");
+            document.getElementById("skillTextContainer").removeAttribute("style");
+            document.getElementById("skillsHeading").removeAttribute("style");
+            for (var i = 0; i < skillSections.length; i++) {
+                skillSections[i].removeAttribute("style");
+            }
+            for (var x = 0; x < skillTexts.length; i++) {
+                skillTexts[x].removeAttribute("style");
+            }
+
 
             const endOffsetWindow = (window.innerHeight * 0.35);
             const endOffsetBox = (window.innerHeight * 0.4);
@@ -79,18 +101,17 @@ function Skills() {
         if (getComputedStyle(skillsWrapperRef.current).opacity == 1 && window.innerWidth < 1024) {
             //remove the scroll animation if already applied and remove the current styles applied by gsap
             gsap.killTweensOf(waveRef.current);
-            waveRef.current.removeAttribute("style");
             gsap.killTweensOf("#skillsWrapper #skillTextContainer");
-            document.getElementById("skillTextContainer").removeAttribute("style");
             gsap.killTweensOf("#skillsHeading");
-            document.getElementById("skillsHeading").removeAttribute("style");
-
             gsap.killTweensOf(".skillSection");
             gsap.killTweensOf("#skillsWrapper #skillTextContainer .skillText");
 
             const skillSections = document.getElementsByClassName("skillSection");
             const skillTexts = document.getElementsByClassName("skillTexts");
 
+            waveRef.current.removeAttribute("style");
+            document.getElementById("skillTextContainer").removeAttribute("style");
+            document.getElementById("skillsHeading").removeAttribute("style");
             for (var i = 0; i < skillSections.length; i++) {
                 skillSections[i].removeAttribute("style");
             }
