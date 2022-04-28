@@ -130,6 +130,9 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  h3 {
+    font-size: 1.2rem;
+  }
   .menuActive {
     visibility: visible;
   }
@@ -161,14 +164,20 @@
     fill: #78685e;
   }
   #skillsWrapper #skillTextContainer {
-    margin-top: 250px;
+    margin-top: 280px;
     color: #78685e;
+    font-size: 1.1rem;
   }
   #skillsWrapper #skillTextContainer .skillText {
     color: #78685e;
   }
   #skillsWrapper #lowerWaveContainer {
     display: none;
+  }
+  .skillSection {
+    width: 35%;
+    margin-right: auto;
+    margin-left: 0;
   }
   #skillsHeading {
     margin-top: 250px;

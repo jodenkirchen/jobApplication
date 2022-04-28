@@ -36,7 +36,7 @@ function Skills() {
             for (var i = 0; i < skillSections.length; i++) {
                 skillSections[i].removeAttribute("style");
             }
-            for (var x = 0; x < skillTexts.length; i++) {
+            for (var x = 0; x < skillTexts.length; x++) {
                 skillTexts[x].removeAttribute("style");
             }
 
@@ -89,9 +89,8 @@ function Skills() {
                     end: "" + endOffsetBox + " " + endOffsetWindow,
                     scrub: true
                 },
-                marginLeft: (window.innerWidth * 0.25),
-                marginRight: (window.innerWidth * 0.25),
-                marginBottom: 60,
+                marginLeft: "auto",
+                marginBottom: 40,
                 borderRadius: 25,
                 boxShadow: "10px 7px #00000017",
                 backgroundColor: "#5a4f45"
@@ -115,7 +114,7 @@ function Skills() {
             for (var i = 0; i < skillSections.length; i++) {
                 skillSections[i].removeAttribute("style");
             }
-            for (var x = 0; x < skillTexts.length; i++) {
+            for (var x = 0; x < skillTexts.length; x++) {
                 skillTexts[x].removeAttribute("style");
             }
         }
@@ -123,10 +122,6 @@ function Skills() {
 
     useEffect(() => {
         window.addEventListener('resize', handleWindowResize);
-        if (screenWidth >= 1024) {
-            console.log();
-
-        }
         skillsWrapperRef.current.addEventListener("animationend", skillsWrapperOpacityMatch);
         return () => {
             window.removeEventListener('resize', handleWindowResize);
