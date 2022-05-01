@@ -204,11 +204,86 @@
     }
     #timelineWrapper::after {
         background-color: #78685e;
+        margin-left: 380px;
+    }
+    .tlConten {
+        padding-left: 20%;
+    }
+    .tlContent::after {
+        left: 374px;
     }
     footer {
         background-color: #615752;
         img {
             width: 10%;
         }
+    }
+}
+@media only screen and (min-width: 1220px) {
+    #timelineWrapper::after {
+        margin-left: 540px;
+    }
+    .tlContainer {
+        padding: 29px 12px 12px 200px;
+    }
+    .tlContent {
+        padding-left: 22%;
+    }
+    .tlContent::after {
+        left: 534px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    #introBackground {
+        width: 26vw;
+        height: 200px;
+        margin-top: -60px;
+    }
+    #intro #welcome #me {
+        max-width: 16%;
+    }
+    #skillsHeading {
+        margin-top: 350px;
+    }
+    #skillsWrapper {
+        padding-bottom: 160px;
+    }
+    #skillsWrapper #skillTextContainer {
+        margin-top: 410px;
+    }
+    #timelineWrapper::after {
+        margin-left: 616px;
+    }
+    .tlContent {
+        padding-left: 22%;
+    }
+    .tlContent::after {
+        left: 610px;
+    }
+    .tlTextRight {
+        padding-left: 32vw;
+    }
+}
+@media only screen and (min-width: 1700px) {
+    #skillsHeading {
+        margin-top: 400px;
+    }
+    #skillsWrapper {
+        padding-bottom: 224px;
+    }
+    #skillsWrapper #skillTextContainer {
+        margin-top: 470px;
+    }
+    .skillSection {
+        width: 24%;
+    }
+    #timelineWrapper::after {
+        margin-left: 666px;
+    }
+    .tlContent {
+        padding-left: 24%;
+    }
+    .tlContent::after {
+        left: 660px;
     }
 }
