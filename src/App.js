@@ -16,9 +16,14 @@ import './timeline.css';
 import './footer.css';
 import './mediaQueries.css';
 
-
-
 function App() {
+
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
+  document.title = "Jan Odenkirchen";
+
   return (
     <div>
       <Logo />
@@ -28,7 +33,6 @@ function App() {
       <Timeline />
       <Footer />
     </div>
-
   );
 }
 export default App; 

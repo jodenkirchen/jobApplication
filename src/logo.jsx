@@ -1,18 +1,13 @@
 import React from 'react';
 import { } from "react-scroll";
 
-const { useEffect, useRef } = React;
+const { useRef } = React;
 
 // wait until DOM has been rendered
 
 
 function Logo() {
     const boxRef = useRef();
-    useEffect(() => {
-        var Scroll = require('react-scroll');
-        var scrollAnim = Scroll.animateScroll;
-        scrollAnim.scrollToTop();
-    });
 
     return (
         <div id="logoWrapper">

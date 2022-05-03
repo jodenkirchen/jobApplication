@@ -1,1 +1,1 @@
-This is a Job Application Website created with React.js, GSAP, SCSS and "vanilla" JavaScript.
+This is a Job Application Website created with React.js, GSAP, react-scroll, SCSS and "vanilla" JavaScript.
