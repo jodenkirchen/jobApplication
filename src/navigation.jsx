@@ -6,7 +6,6 @@ function Navigation() {
 
     const [burgerActive, setBurgerActive] = useState(false);
     var offSet = 0;
-    var isMobile = useState(true);
     // const lineActive = isMobile ? 'line active' : 'line';
     const lineClick = burgerActive ? "line active" : "line";
 
@@ -65,7 +64,7 @@ function Navigation() {
             </div>
             <div id="nav">
                 <li className="navItem"><Link to="introWrapper" spy={true} smooth={true} offset={offSet} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }} >Home</Link></li>
-                <li className="navItem"><Link to="skillsWrapper" spy={true} smooth={true} offset={offSet} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Skills</Link></li>
+                <li className="navItem"><Link to="skillsHeading" spy={true} smooth={true} offset={offSet} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Skills</Link></li>
                 <li className="navItem"><Link to="timelineWrapper" spy={true} smooth={true} offset={offSet} duration={500} onClick={() => { burgerSwap(); setBurgerActive(!burgerActive) }}>Timeline</Link></li>
             </div>
         </div>

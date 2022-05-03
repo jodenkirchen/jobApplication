@@ -1,25 +1,20 @@
-import React, { Component, useState, useCallback, useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Skills() {
-    var screenWidth = window.innerWidth;
-    var isMobile = useState(true);
     const waveRef = useRef();
     const skillsWrapperRef = useRef();
     gsap.registerPlugin(ScrollTrigger);
 
     const handleWindowResize = useCallback(event => {
-        screenWidth = window.innerWidth;
         skillsWrapperOpacityMatch();
-
     }, []);
 
 
     function skillsWrapperOpacityMatch() {
 
         if (getComputedStyle(skillsWrapperRef.current).opacity == 1 && window.innerWidth >= 1024) {
-
             //remove current style values and tweens so it doenst crash on rescale
             gsap.killTweensOf(waveRef.current);
             gsap.killTweensOf("#skillsWrapper #skillTextContainer");
@@ -111,11 +106,11 @@ function Skills() {
             waveRef.current.removeAttribute("style");
             document.getElementById("skillTextContainer").removeAttribute("style");
             document.getElementById("skillsHeading").removeAttribute("style");
-            for (var i = 0; i < skillSections.length; i++) {
-                skillSections[i].removeAttribute("style");
+            for (var p = 0; p < skillSections.length; p++) {
+                skillSections[p].removeAttribute("style");
             }
-            for (var x = 0; x < skillTexts.length; x++) {
-                skillTexts[x].removeAttribute("style");
+            for (var q = 0; q < skillTexts.length; q++) {
+                skillTexts[q].removeAttribute("style");
             }
         }
     }

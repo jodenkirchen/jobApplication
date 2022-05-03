@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { } from 'react';
 function Content() {
     return (
 
@@ -10,7 +10,7 @@ function Content() {
             <div id="intro">
                 <div id="welcome" className="introItem">
                     <div id="introBackground"></div>
-                    <img id="me" src="/media/me.jpg"></img>
+                    <img id="me" src="/media/me.jpg" alt="ImageOfMe"></img>
                     <div id="welcomeText">
                         Jan Odenkirchen<br />
                         <div id="welcomeTextJob">

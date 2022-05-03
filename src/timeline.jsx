@@ -1,14 +1,12 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 function Timeline() {
 
-    var screenWidth = window.innerWidth;
     const timelineWrapperRef = useRef();
     gsap.registerPlugin(ScrollTrigger);
 
     const handleWindowResize = useCallback(event => {
-        screenWidth = window.innerWidth;
         timelineWrapperOpacityMatch();
 
     }, []);
@@ -33,12 +31,6 @@ function Timeline() {
                 gsap.killTweensOf(timelineTextsRight[x]);
             }
 
-
-            const endOffsetWindow = (window.innerHeight * 0.35);
-            const endOffsetBox = (window.innerHeight * 0.4);
-            const startOffsetBoxText = (window.innerHeight * 0.45);
-
-
             gsap.from(".tlContent", {
                 scrollTrigger: {
                     trigger: "#timelineWrapper",
@@ -62,6 +54,7 @@ function Timeline() {
         }
 
         if (getComputedStyle(timelineWrapperRef.current).opacity == 1 && window.innerWidth < 1024) {
+            ScrollTrigger.getAll('myID').forEach(st => st.kill());
             //remove the scroll animation if already applied and remove the current styles applied by gsap
             gsap.killTweensOf(".tlContent");
             gsap.killTweensOf(".tlTextRight");
@@ -69,13 +62,13 @@ function Timeline() {
             const timelineContents = document.getElementsByClassName("tlContent");
             const timelineTextsRight = document.getElementsByClassName("tlTextRight");
 
-            for (var i = 0; i < timelineContents.length; i++) {
-                timelineContents[i].removeAttribute("style");
-                gsap.killTweensOf(timelineContents[i]);
+            for (var p = 0; p < timelineContents.length; p++) {
+                timelineContents[p].removeAttribute("style");
+                gsap.killTweensOf(timelineContents[p]);
             }
-            for (var x = 0; x < timelineTextsRight.length; x++) {
-                timelineTextsRight[x].removeAttribute("style");
-                gsap.killTweensOf(timelineTextsRight[x]);
+            for (var q = 0; q < timelineTextsRight.length; q++) {
+                timelineTextsRight[q].removeAttribute("style");
+                gsap.killTweensOf(timelineTextsRight[q]);
             }
 
         }

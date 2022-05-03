@@ -7,7 +7,7 @@
 #timelineWrapper::after {
   position: absolute;
   width: 8px;
-  max-height: 680px;
+  max-height: 715px;
   background-color: #665950;
   top: 145px;
   bottom: 10%;

@@ -1,6 +1,6 @@
 @media only screen and (min-width: 320px) {
-  #timelineWrapper::after {
-    max-height: 600px;
+  h3 {
+    font-size: 1.15rem;
   }
 }
 
@@ -29,7 +29,7 @@
     font-size: 1.1rem;
   }
   #timelineWrapper::after {
-    top: 140px;
+    top: 145px;
     max-height: 645px;
     margin-left: 110px;
   }
@@ -150,6 +150,7 @@
     display: inline;
     font-size: 1.3rem;
     padding-left: 16px;
+    cursor: pointer;
   }
   #burgerMenu {
     display: none;
@@ -282,6 +283,7 @@
 @media only screen and (min-width: 1920px) {
   #timelineWrapper::after {
     margin-left: 836px;
+    top: 200px;
   }
   #tlHeading {
     padding-bottom: 100px;

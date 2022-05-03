@@ -1,5 +1,4 @@
 import React from 'react';
-import { gsap } from 'gsap';
 import { } from "react-scroll";
 
 const { useEffect, useRef } = React;
@@ -11,11 +10,8 @@ function Logo() {
     const boxRef = useRef();
     useEffect(() => {
         var Scroll = require('react-scroll');
-        var scroll = Scroll.animateScroll;
-        scroll.scrollToTop();
-        gsap.to(boxRef.current, {
-            rotation: "+=3600"
-        });
+        var scrollAnim = Scroll.animateScroll;
+        scrollAnim.scrollToTop();
     });
 
     return (
