@@ -13,7 +13,7 @@ function Timeline() {
 
 
     function timelineWrapperOpacityMatch() {
-
+        // eslint-disable-next-line
         if (getComputedStyle(timelineWrapperRef.current).opacity == 1 && window.innerWidth >= 1024) {
             //remove current style values and tweens so it doenst crash on rescale
             gsap.killTweensOf(".tlContent");
@@ -52,7 +52,7 @@ function Timeline() {
 
 
         }
-
+        // eslint-disable-next-line
         if (getComputedStyle(timelineWrapperRef.current).opacity == 1 && window.innerWidth < 1024) {
             ScrollTrigger.getAll('myID').forEach(st => st.kill());
             //remove the scroll animation if already applied and remove the current styles applied by gsap

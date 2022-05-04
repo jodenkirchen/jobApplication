@@ -14,6 +14,7 @@ function Skills() {
 
     function skillsWrapperOpacityMatch() {
 
+        // eslint-disable-next-line
         if (getComputedStyle(skillsWrapperRef.current).opacity == 1 && window.innerWidth >= 1024) {
             //remove current style values and tweens so it doenst crash on rescale
             gsap.killTweensOf(waveRef.current);
@@ -92,6 +93,7 @@ function Skills() {
             });
         }
 
+        // eslint-disable-next-line
         if (getComputedStyle(skillsWrapperRef.current).opacity == 1 && window.innerWidth < 1024) {
             //remove the scroll animation if already applied and remove the current styles applied by gsap
             gsap.killTweensOf(waveRef.current);

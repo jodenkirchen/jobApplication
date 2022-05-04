@@ -12,8 +12,10 @@ function Navigation() {
     //check if the burger is currently active and and deactivate if so        
     const handleWindowResize = useCallback(event => {
         if (window.innerWidth < 1024) {
+            // eslint-disable-next-line
             setBurgerActive(burgerActive);
         }
+        // eslint-disable-next-line
         offSet = -48;
         var sections = document.getElementsByClassName("section");
         if (sections[0].classList.contains("menuActive")) {
