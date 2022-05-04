@@ -39,10 +39,7 @@ jobs:
         env:
           CI: true
           SITE_URL: ${{ steps.project.outputs.site-url }}
-        run: |
-          npm ci
-          npm run build
-          npm start
+        run: CI=false npm run build
 
       - name: Deploy to IONOS
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
@@ -52,5 +49,5 @@ jobs:
           branch-id: ${{ steps.project.outputs.branch-id }}
           service-host: api-eu.ionos.space
           api-key: ${{ secrets.IONOS_API_KEY }}
-          dist-folder: ./
+          dist-folder: public
           runtime-placeholder-files: ${{ steps.template.outputs.runtime-placeholder-files }}
