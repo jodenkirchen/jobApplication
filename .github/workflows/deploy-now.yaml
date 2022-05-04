@@ -39,7 +39,10 @@ jobs:
         env:
           CI: true
           SITE_URL: ${{ steps.project.outputs.site-url }}
-        run: CI=false npm run build
+        run: |
+          npm install --global yarn
+          yarn install --frozen-lockfile
+          yarn build
 
       - name: Deploy to IONOS
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
