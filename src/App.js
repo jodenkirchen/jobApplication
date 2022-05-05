@@ -17,6 +17,7 @@ import './footer.css';
 import './mediaQueries.css';
 
 function App() {
+  console.log("test");
 
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
