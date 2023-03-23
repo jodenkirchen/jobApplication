@@ -34,7 +34,6 @@
 }
 
 .tlContent {
-  display: -ms-grid;
   display: grid;
 }
 
@@ -60,5 +59,4 @@
 
 #tlLastEntry {
   padding-bottom: 10vmax;
-}
-/*# sourceMappingURL=timeline.css.map */
+}/*# sourceMappingURL=timeline.css.map */

@@ -88,7 +88,7 @@ function Skills() {
                 marginLeft: "auto",
                 marginBottom: 40,
                 borderRadius: 25,
-                boxShadow: "10px 7px #00000017",
+                //boxShadow: "10px 7px #00000017",
                 backgroundColor: "#5a4f45"
             });
         }

@@ -3,7 +3,6 @@ footer {
   width: 100%;
   background-color: #5a4f46;
 }
-
 footer img {
   display: block;
   width: 30%;
@@ -12,7 +11,7 @@ footer img {
 }
 
 #footerText {
-  padding: 2% 0  2% 0;
+  padding: 2% 0 2% 0;
   color: #c7ff00;
   text-align: center;
   text-transform: uppercase;
@@ -21,5 +20,4 @@ footer img {
 #copyright {
   text-align: center;
   margin-top: 2%;
-}
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */

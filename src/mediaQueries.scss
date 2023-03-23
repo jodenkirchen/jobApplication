@@ -2,12 +2,18 @@
     h3 {
         font-size: 1.15rem;
     }
+    #introBackground {
+        width: 92vw;
+    }
+    #intro #welcome #welcomeText {
+        font-size: 1.4rem;
+    }
 }
 
 @media only screen and (min-width: 375px) {
     #introBackground {
         margin-top: -38px;
-        height: 170px;
+        height: 185px;
     }
     #menuWrapper #burgerMenu {
         margin-left: 8px;
@@ -15,11 +21,17 @@
     }
 
     #intro #welcome #welcomeText {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     #intro #welcome #welcomeText #welcomeTextJob {
         font-size: 1.1rem;
+    }
+    #intro #greetingsText{
+        width: 75%;
+    }
+    #intro #greetingsButton{
+        max-width: 22%;
     }
 
     #skillsWrapper #skillTextContainer {
@@ -59,6 +71,17 @@
     }
     #intro #welcome #me {
         margin-top: -20px;
+        max-width: 160px;;
+    }
+    #intro #welcome #welcomeText{
+        margin-top: -15px;
+    }
+    #intro #greetingsText{
+        font-size: 1.2rem;
+        width: 60%;
+    }
+    #intro #greetingsButtonLabel{
+        font-size: 1.12rem;
     }
     #timelineWrapper::after {
         margin-left: 120px;
@@ -75,11 +98,15 @@
     #introBackground {
         height: 160px;
         margin-top: -40px;
-        width: 54vw;
+        width: 65vw;
     }
     #intro #welcome #me {
-        max-width: 28%;
+        max-width: 35%;
         margin-top: 5px;
+    }
+    #intro #greetingsButton
+    {
+        max-width: 18%;
     }
     .sectionHeading {
         padding: 4% 0 4% 0;
@@ -99,11 +126,36 @@
     #menuWrapper #burgerMenu {
         width: 2vw;
     }
+    #intro{
+        padding-top: 24vh;
+    }
     #introBackground {
-        width: 35vw;
+        width: 52vw;
+        height: 180px;
     }
     #intro #welcome #me {
-        max-width: 20%;
+        max-width: 30%;
+    }
+    #intro #welcome #welcomeText{
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+    #intro #welcome #welcomeText #welcomeTextJob{
+        font-size: 1.25rem;
+    }
+    #intro #greetingsText{
+        width: 40%;
+        font-size: 1.4rem;
+
+        h2{
+            font-size: 1.6rem;
+        }
+    }
+    #intro #greetingsButton{
+        max-width: 13%;
+        #greetingsButtonLabel{
+            font-size: 1.3rem;
+        }
     }
     #timelineWrapper::after {
         margin-left: 230px;
@@ -156,13 +208,38 @@
             opacity: 100%;
             text-align: unset;
             display: inline;
-            font-size: 1.3rem;
-            padding-left: 16px;
+            font-size: 1.8rem;
+            padding-left: 40px;
             cursor: pointer;
         }
     }
     #burgerMenu {
         display: none;
+    }
+    #intro{
+        $greetingsMargin: 60%;
+        #welcome{
+            #me{
+                max-width: 38%;
+            }
+            #introBackground{
+                height: 220px;
+            }
+            #welcomeText{
+                margin-top: 20px;
+            }
+        }
+        #greetingsText{
+            margin-left: $greetingsMargin;
+            margin-top: -10%;
+            padding: 0;
+            width: 35%;
+        }
+        #greetingsButton{
+            margin-left: $greetingsMargin;
+            max-width: initial;
+            width: 10%;
+        }
     }
     #arrowIntro {
         bottom: 10%;
@@ -237,12 +314,24 @@
 }
 @media only screen and (min-width: 1440px) {
     #introBackground {
-        width: 26vw;
+        width: 40vw;
         height: 200px;
         margin-top: -60px;
     }
     #intro #welcome #me {
-        max-width: 16%;
+        max-width: 30%;
+    }
+    #intro #greetingsButton{
+        width: 8%;
+    }
+    #intro #greetingsBackground{
+        position: relative;
+        margin-top: -185px;
+        margin-left: 57%;
+        height: 220px;
+        z-index: -1;
+        background-color: #615752;
+        border-radius: 20px 0px 0px 20px;
     }
     #skillsHeading {
         margin-top: 350px;
@@ -360,8 +449,24 @@
     #nav .navItem {
         font-size: 1.7rem;
     }
-    #introBackground {
-        width: 24vw;
+    #intro {
+        #welcome{
+
+            #introBackground {
+                height: 280px;
+            }
+        }
+        #greetingsText{
+            width: 20%;
+            margin-left: 80%;
+        }
+        #greetingsButton{
+            margin-left: 80%;
+        }
+        #greetingsBackground{
+            width: 23%;
+            margin-left: 77%;
+        }
     }
 }
 @media only screen and (min-width: 2750px) {

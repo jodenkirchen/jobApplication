@@ -23,7 +23,7 @@ function App() {
     window.scrollTo(0, 0);
   }
 
-  document.title = "Jan Odenkirchen";
+  document.title = "Lara Odenkirchen";
 
   return (
     <div>

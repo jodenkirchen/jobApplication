@@ -24,49 +24,31 @@ body.burgerActive {
   margin-left: 7px;
   margin-top: 1px;
 }
-
 #burgerMenu .line {
   width: 100%;
   height: 100%;
   padding: 4px;
   border-bottom: 2px solid #c7ff00;
 }
-
 #burgerMenu #firstLine {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
 }
-
 #burgerMenu #firstLine.active {
-  -webkit-transform: rotate(45deg) translate(9px, 6px);
-          transform: rotate(45deg) translate(9px, 6px);
+  transform: rotate(45deg) translate(9px, 6px);
 }
-
 #burgerMenu #secondLine {
   opacity: 100%;
   width: 60%;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
 }
-
 #burgerMenu #secondLine.active {
   opacity: 0;
 }
-
 #burgerMenu #thirdLine {
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
 }
-
 #burgerMenu #thirdLine.active {
-  -webkit-transform: rotate(-45deg) translate(4px, -9px);
-          transform: rotate(-45deg) translate(4px, -9px);
+  transform: rotate(-45deg) translate(4px, -9px);
 }
 
 #menuWrapper {
@@ -82,7 +64,6 @@ body.burgerActive {
   display: none;
   height: 0;
 }
-
 #nav .navItem {
   padding-top: 9vh;
   color: #c7ff00;
@@ -101,7 +82,6 @@ body.burgerActive {
   z-index: 9;
   display: block;
 }
-
 #nav.active .navItem {
   opacity: 100%;
 }
@@ -122,5 +102,4 @@ body.burgerActive {
 h3 {
   font-size: 1rem;
   margin-bottom: 5px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

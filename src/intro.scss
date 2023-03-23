@@ -21,33 +21,60 @@
     }
     #welcome {
         display: inline-flex;
+        margin-top: -35px;
         #welcomeText {
-            margin: 15px 0 0 -57px;
+            margin: 5px 0 0 0px;
             padding: 0;
             width: 50%;
             text-align: left;
             padding-left: 10px;
-            font-size: 1.4rem;
+            font-size: 1.1rem;
+            font-weight: bold;
             color: #c7ff00;
 
             #welcomeTextJob {
-                margin-left: 50px;
-                font-size: 0.95rem;
+                margin:10px 0 0 0;
+                font-size: 0.89rem;
+                font-weight: normal;
             }
         }
         #me {
-            max-width: 40%;
+            filter: grayscale(25%);
+            max-width: 150px;
             border-radius: 0 10px 10px 0;
         }
+    }
+    #greetingsText{
+        color:#ffffff;
+        font-size: 1.05rem;
+        padding: 10px;
+        margin: 40px 15px 15px 15px;
+
+        h2{
+            color:#c7ff00;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+    }
+    #greetingsButton{
+        background-color: #c7ff02;
+        max-width: 28%;
+        color: #151013;
+        margin-left: 25px;
+        #greetingsButtonLabel{
+            padding: 3px;
+            text-align: center;
+        }
+
     }
 }
 
 #introBackground {
     position: absolute;
     z-index: -1;
-    margin-top: -34px;
-    width: 65vw;
-    height: 150px;
+    margin-top: -35px;
+    width: 95vw;
+    height: 165px;
     background-color: #615752;
     border-radius: 0 20px 20px 0;
 }

@@ -117,10 +117,10 @@ function Timeline() {
             </div>
             <div id="tlLastEntry" className="tlContainer">
                 <div className="tlContent tlLeft highlight">
-                    2021
+                    2023
                 </div>
                 <div className="tlTextRight">
-                    <span className="highlight">Bachelor of Science, Data Science<br />&#040;In progress&#041;</span>,<br />International University of Applied Sciences,<br />Distance Learning
+                    <span className="highlight">For you&#63;</span>
                 </div>
             </div>
 
