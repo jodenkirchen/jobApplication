@@ -1,4 +1,5 @@
 import React, { } from 'react';
+import { Link } from "react-scroll";
 function Content() {
     return (
 
@@ -32,9 +33,11 @@ function Content() {
 
             </div>
 
-            <div id="arrowIntro"></div>
+            {/* offset is for the y-axis, so that the headline isn't cut off */}
+            <Link to="skillsHeading" spy={true} smooth={true} offset={-48} duration={500}><div id="arrowIntro"></div></Link>
         </div>
     )
+
 }
 
 export default Content;

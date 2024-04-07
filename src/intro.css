@@ -81,4 +81,24 @@
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   position: absolute;
+  animation: 0.6s linear forwards alternate jump9_7, 0.6s linear forwards reverse jump9_7;
+  animation-name: jump9_7;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump9_7 {
+  from {
+    bottom: 9vh;
+  }
+  to {
+    bottom: 7vh;
+  }
+}
+@keyframes jump14_12 {
+  from {
+    bottom: 14vh;
+  }
+  to {
+    bottom: 12vh;
+  }
 }/*# sourceMappingURL=intro.css.map */

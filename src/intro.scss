@@ -80,6 +80,7 @@
 }
 
 #arrowIntro {
+    $animationTimeJump : 0.6s;
     right: 5vh;
     bottom: 5vh;
     padding: 10px;
@@ -88,4 +89,27 @@
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
     position: absolute;
+
+    
+    animation: $animationTimeJump linear forwards alternate jump9_7, $animationTimeJump linear forwards reverse jump9_7;
+    animation-name: jump9_7;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes jump9_7{
+    from{
+        bottom: 9vh;
+    }
+    to{
+        bottom: 7vh;
+    }
+}
+@keyframes jump14_12{
+    from{
+        bottom: 14vh;
+    }
+    to{
+        bottom: 12vh;
+    }
 }
